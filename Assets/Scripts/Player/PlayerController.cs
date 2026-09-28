@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
     // Dash Variables VV
     private bool canDash = true;
     private bool isDashing; 
-    private float dashingPower = 10f;
+    private float dashingPower = 11.5f;
     private float dashingTime = 0.3f;
     private float dashingCooldown = 0.3f;
     [SerializeField] private TrailRenderer _trailRenderer;
@@ -151,11 +151,30 @@ public class PlayerController : MonoBehaviour
         {
             yield break;
         }
-        canDash = false;
-        isDashing = true;
-        _rigidbody2D.gravityScale = 1f;
-        _rigidbody2D.linearVelocity = new Vector2(_input.Horizontal * dashingPower, _input.Vertical * dashingPower);
-        _trailRenderer.emitting = true;
+        if (_input.Horizontal != 0 && _input.Vertical == 0)
+        {//Horizontal 
+            canDash = false;
+            isDashing = true;
+            _rigidbody2D.gravityScale = 1f;
+            _rigidbody2D.linearVelocity = new Vector2(_input.Horizontal * dashingPower * 1.6f, _input.Vertical * dashingPower);
+            _trailRenderer.emitting = true;
+        }
+        if (_input.Horizontal != 0 && _input.Vertical != 0)
+        {//Diagonal 
+            canDash = false;
+            isDashing = true;
+            _rigidbody2D.gravityScale = 1.2f;
+            _rigidbody2D.linearVelocity = new Vector2(_input.Horizontal * dashingPower * 1.3f, _input.Vertical * dashingPower * 1.3f);
+            _trailRenderer.emitting = true;
+        }
+        if (_input.Horizontal == 0 && _input.Vertical != 0)
+        {//Vertical 
+            canDash = false;
+            isDashing = true;
+            _rigidbody2D.gravityScale = 5f;
+            _rigidbody2D.linearVelocity = new Vector2(_input.Horizontal * dashingPower, _input.Vertical * dashingPower * 1.8f);
+            _trailRenderer.emitting = true;
+        }
         yield return new WaitForSeconds(dashingTime);
         canDash = true;
         isDashing = false; 
