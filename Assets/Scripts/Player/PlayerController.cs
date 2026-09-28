@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     // Dash Variables VV
-    private bool canDash = true;
+    private int canDash = 1;
     private bool isDashing; 
     private float dashingPower = 10f;
     private float dashingTime = 0.3f;
@@ -48,7 +48,10 @@ public class PlayerController : MonoBehaviour
         isGrounded = Physics2D.OverlapBox
         (groundCheck.position, 
             groundBoxSize, 0f, groundLayer);
-        
+        if (isGrounded)
+        {
+            canDash = 1;
+        }
         if (_input.Jump && isGrounded)
         {
             // Code for jumping
@@ -151,16 +154,20 @@ public class PlayerController : MonoBehaviour
         {
             yield break;
         }
-        canDash = false;
-        isDashing = true;
-        _rigidbody2D.gravityScale = 1f;
-        _rigidbody2D.linearVelocity = new Vector2(_input.Horizontal * dashingPower, _input.Vertical * dashingPower);
-        _trailRenderer.emitting = true;
+
+        if (canDash > 0)
+        {
+            canDash--;
+            isDashing = true;
+            _rigidbody2D.gravityScale = 1f;
+            _rigidbody2D.linearVelocity = new Vector2(_input.Horizontal * dashingPower, _input.Vertical * dashingPower);
+            _trailRenderer.emitting = true;
+        }
         yield return new WaitForSeconds(dashingTime);
-        canDash = true;
         isDashing = false; 
         _rigidbody2D.gravityScale = 2f;
         _trailRenderer.emitting = false;
+        
     }
 
     private IEnumerator LandStun()
