@@ -4,35 +4,49 @@ using UnityEngine;
 public class EnemyPatrol : MonoBehaviour
 {
     private bool turning;
+    public float turnTime;
     private bool squished;
+    public float squishTime;
     public float moveSpeed;
-
+    
     public LayerMask whatIsWall;
     public Transform wallCheck;
     public Transform fallCheck;
 
     private Rigidbody2D _rigidbody2D;
     private Animator _animator;
-    private PlayerController pc;
+    public SpriteRenderer _spriterenderer;
 
     private void Awake()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
-        
+        _animator = GetComponent<Animator>();
+        _spriterenderer = GetComponent<SpriteRenderer>();
     }
     // Update is called once per frame
     void Update()
     {
         if (DetectedWallOrFall())
         {
-            moveSpeed *= -1;
             transform.localScale = new Vector2(transform.localScale.x * -1,1);
+            StartCoroutine(TurnTime());
+        }
+
+        if (turning) 
+        {
+            _rigidbody2D.linearVelocity = Vector2.zero;
+        }
+        if (squished) 
+        {
+            _rigidbody2D.linearVelocity = Vector2.zero;
         }
         UpdateAnimation();
     }
 
     private void FixedUpdate()
     {
+        if (turning) return;
+        if (squished) return;
         _rigidbody2D.linearVelocityX = moveSpeed;
     }
 
@@ -51,16 +65,16 @@ public class EnemyPatrol : MonoBehaviour
     private IEnumerator TurnTime()
     {
         turning = true;
-        _rigidbody2D.linearVelocity = Vector2.zero;
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(turnTime);
+        _spriterenderer.flipX = false;
         turning = false;
+        moveSpeed *= -1;
     }
 
     private IEnumerator SquishTime()
     {
         squished = true;
-        _rigidbody2D.linearVelocity = Vector2.zero;
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(squishTime);
         squished = false;
     }
 
@@ -70,10 +84,10 @@ public class EnemyPatrol : MonoBehaviour
     }
     private void UpdateAnimation()
     {
-        if (DetectedWallOrFall() && !turning)
-        { 
+        if (turning)
+        {
+            _spriterenderer.flipX = true;
             _animator.Play("Turn");
-            StartCoroutine(TurnTime());
             return;
         }
         if (squished)
@@ -81,6 +95,10 @@ public class EnemyPatrol : MonoBehaviour
             _animator.Play("Squish");
             return;
         }
+
+        if (turning) return;
+        if (squished) return;
+     
         _animator.Play("Walk");
     }
 }
