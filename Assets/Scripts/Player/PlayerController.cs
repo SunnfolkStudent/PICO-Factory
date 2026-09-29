@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -22,9 +23,10 @@ public class PlayerController : MonoBehaviour
     private Animator _animator;
     private EnemyPatrol _enemyPatrol;
 
-    // movement and jump speed
+    // movement and jump speed and death lol VVV 
     public float moveSpeed;
     public float jumpSpeed;
+    public bool isDead;
     
     // used for jumping and ground checks vv
     public bool isGrounded;
@@ -98,6 +100,11 @@ public class PlayerController : MonoBehaviour
     // Used for Animation Updating and Playing Animations.
     private void UpdateAnimation()
     {
+        if (isDead)
+        {
+            _animator.Play("Death Explosion");
+            return;
+        }
         if (isGrounded)
         {
             if (VelocityY <= -16f)
@@ -105,7 +112,6 @@ public class PlayerController : MonoBehaviour
                 Land();
                 return;
             }
-            
             if (_input.Horizontal != 0)
             {
                 // Plays the "run" animation when moving (have a velocity x of either 1 or -1)
@@ -204,6 +210,11 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         landing = false;
     }
+
+    private IEnumerator DeathAnimation()
+    {
+        yield return new WaitForSeconds(1f);
+    }
     //function for bouncing on enemies (also calls the function in enemy code to stun him)
     public void EnemyBounce()
     {
@@ -212,6 +223,15 @@ public class PlayerController : MonoBehaviour
         {
             _enemyPatrol.Squish();
             _rigidbody2D.linearVelocityY = jumpSpeed * 1.5f;
+        }
+    }
+    //Death Tag VVV 
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.transform.CompareTag("Death"))
+        {
+            isDead = true;
+            StartCoroutine(DeathAnimation());
         }
     }
 }
