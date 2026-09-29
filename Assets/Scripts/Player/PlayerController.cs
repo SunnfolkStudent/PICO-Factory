@@ -148,28 +148,52 @@ public class PlayerController : MonoBehaviour
         Gizmos.color = Color.darkRed;
         Gizmos.DrawWireCube(groundCheck.position, groundBoxSize);
     }
-    // function for dashing
     private IEnumerator Dash()
     {
         if (_input.Horizontal == 0 && _input.Vertical == 0)
         {
             yield break;
         }
-
-        if (canDash > 0)
-        {
-            canDash--;
-            isDashing = true;
-            _rigidbody2D.gravityScale = 1f;
-            _rigidbody2D.linearVelocity = new Vector2(_input.Horizontal * dashingPower, _input.Vertical * dashingPower);
-            _trailRenderer.emitting = true;
+        if (_input.Horizontal != 0 && _input.Vertical == 0)
+        {//Horizontal
+            if (canDash > 0)
+            {
+                canDash--;
+                isDashing = true;
+                _rigidbody2D.gravityScale = 1f;
+                _rigidbody2D.linearVelocity = new Vector2(_input.Horizontal * dashingPower * 1.6f, _input.Vertical * dashingPower);
+                _trailRenderer.emitting = true;
+            }
+        }
+        if (_input.Horizontal != 0 && _input.Vertical != 0)
+        {//Diagonal
+            if (canDash > 0)
+            {
+                canDash --;
+                isDashing = true;
+                _rigidbody2D.gravityScale = 1.2f;
+                _rigidbody2D.linearVelocity = new Vector2(_input.Horizontal * dashingPower * 1.3f, _input.Vertical * dashingPower * 1.3f);
+                _trailRenderer.emitting = true;
+            }
+        }
+        if (_input.Horizontal == 0 && _input.Vertical != 0)
+        {//Vertical
+            if (canDash > 0)
+            {
+                canDash --;
+                isDashing = true;
+                _rigidbody2D.gravityScale = 5f;
+                _rigidbody2D.linearVelocity = new Vector2(_input.Horizontal * dashingPower, _input.Vertical * dashingPower * 1.8f);
+                _trailRenderer.emitting = true;
+            }
         }
         yield return new WaitForSeconds(dashingTime);
-        isDashing = false; 
+        canDash --;
+        isDashing = false;
         _rigidbody2D.gravityScale = 2f;
         _trailRenderer.emitting = false;
-        
     }
+    
     //function for Land animation and logic
     private IEnumerator LandStun()
     {
