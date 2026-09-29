@@ -5,28 +5,26 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     // Dash Variables VV
-    private bool canDash = true;
+    private int canDash = 1;
     private bool isDashing; 
-    private float dashingPower = 11.5f;
+    private float dashingPower = 10f;
     private float dashingTime = 0.3f;
     private float dashingCooldown = 0.3f;
     [SerializeField] private TrailRenderer _trailRenderer;
     
     // Landing Variables
-    private bool landing;
+    public bool landing;
+    public float VelocityY;
     
     // component variables VV
     private InputController _input;
     private Rigidbody2D _rigidbody2D;
     private Animator _animator;
+    private EnemyPatrol _enemyPatrol;
 
     // movement and jump speed
     public float moveSpeed;
     public float jumpSpeed;
-
-    
-    [SerializeField] private float minimumImpactSpeed = 10f;
-    
     
     // used for jumping and ground checks vv
     public bool isGrounded;
@@ -48,13 +46,15 @@ public class PlayerController : MonoBehaviour
         isGrounded = Physics2D.OverlapBox
         (groundCheck.position, 
             groundBoxSize, 0f, groundLayer);
-        
+        if (isGrounded)
+        {
+            canDash = 1;
+        }
         if (_input.Jump && isGrounded)
         {
             // Code for jumping
             _rigidbody2D.linearVelocityY = jumpSpeed;
         }
-        
         if (_input.Horizontal > 0)
         {
             // flips character sprite right when moving to the right
@@ -71,6 +71,8 @@ public class PlayerController : MonoBehaviour
         {
             StartCoroutine(Dash());
         }
+        EnemyBounce();
+        if (landing) return;
         // plays the correct animation every frame
         UpdateAnimation();
     }
@@ -78,31 +80,32 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         //checks if the player is currently dashing, making the player unable to move
-        if (isDashing) {return;}
+        if (isDashing) return;
         
         //checks if the player is currently landing, making the player unable to move
-        if (landing) {return;}
+        if (landing) return;
         
         // movement code
         _rigidbody2D.linearVelocityX = _input.Horizontal * moveSpeed;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    public void LateUpdate()
     {
-        if (collision.transform.CompareTag("Ground") && isGrounded)
-        {
-            float impactSpeed = Mathf.Abs(collision.relativeVelocity.y);
-            if (impactSpeed >= minimumImpactSpeed)
-            {
-                Land();
-            }
-        }
+        VelocityY = _rigidbody2D.linearVelocityY;
     }
+    
+    
     // Used for Animation Updating and Playing Animations.
     private void UpdateAnimation()
     {
         if (isGrounded)
         {
+            if (VelocityY <= -16f)
+            {
+                Land();
+                return;
+            }
+            
             if (_input.Horizontal != 0)
             {
                 // Plays the "run" animation when moving (have a velocity x of either 1 or -1)
@@ -134,7 +137,7 @@ public class PlayerController : MonoBehaviour
         }
         
     }
-
+    // function for starting the "LandStun" Enumerator
     private void Land()
     {
         StartCoroutine(LandStun());
@@ -145,48 +148,45 @@ public class PlayerController : MonoBehaviour
         Gizmos.color = Color.darkRed;
         Gizmos.DrawWireCube(groundCheck.position, groundBoxSize);
     }
+    // function for dashing
     private IEnumerator Dash()
     {
         if (_input.Horizontal == 0 && _input.Vertical == 0)
         {
             yield break;
         }
-        if (_input.Horizontal != 0 && _input.Vertical == 0)
-        {//Horizontal 
-            canDash = false;
+
+        if (canDash > 0)
+        {
+            canDash--;
             isDashing = true;
             _rigidbody2D.gravityScale = 1f;
-            _rigidbody2D.linearVelocity = new Vector2(_input.Horizontal * dashingPower * 1.6f, _input.Vertical * dashingPower);
-            _trailRenderer.emitting = true;
-        }
-        if (_input.Horizontal != 0 && _input.Vertical != 0)
-        {//Diagonal 
-            canDash = false;
-            isDashing = true;
-            _rigidbody2D.gravityScale = 1.2f;
-            _rigidbody2D.linearVelocity = new Vector2(_input.Horizontal * dashingPower * 1.3f, _input.Vertical * dashingPower * 1.3f);
-            _trailRenderer.emitting = true;
-        }
-        if (_input.Horizontal == 0 && _input.Vertical != 0)
-        {//Vertical 
-            canDash = false;
-            isDashing = true;
-            _rigidbody2D.gravityScale = 5f;
-            _rigidbody2D.linearVelocity = new Vector2(_input.Horizontal * dashingPower, _input.Vertical * dashingPower * 1.8f);
+            _rigidbody2D.linearVelocity = new Vector2(_input.Horizontal * dashingPower, _input.Vertical * dashingPower);
             _trailRenderer.emitting = true;
         }
         yield return new WaitForSeconds(dashingTime);
-        canDash = true;
         isDashing = false; 
         _rigidbody2D.gravityScale = 2f;
         _trailRenderer.emitting = false;
+        
     }
-
+    //function for Land animation and logic
     private IEnumerator LandStun()
     {
-        landing = true;
+        _rigidbody2D.linearVelocity = Vector2.zero;
         _animator.Play("Land");
+        landing = true;
         yield return new WaitForSeconds(0.5f);
         landing = false;
+    }
+    //function for bouncing on enemies (also calls the function in enemy code to stun him)
+    public void EnemyBounce()
+    {
+        if (!Physics2D.OverlapCircle(groundCheck.position, 0.2f,
+                LayerMask.GetMask("Enemy"))) return;
+        {
+            _enemyPatrol.Squish();
+            _rigidbody2D.linearVelocityY = jumpSpeed * 1.5f;
+        }
     }
 }
