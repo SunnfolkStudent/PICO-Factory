@@ -334,7 +334,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
-  groundBoxSize: {x: 0.6, y: 0.1}
+  groundBoxSize: {x: 0.58, y: 0.1}
 --- !u!61 &184932770
 BoxCollider2D:
   m_ObjectHideFlags: 0
