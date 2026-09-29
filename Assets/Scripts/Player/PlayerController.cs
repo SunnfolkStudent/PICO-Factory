@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -27,6 +28,7 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed;
     public float jumpSpeed;
     public bool isDead;
+    public bool key;
     
     // used for jumping and ground checks vv
     public bool isGrounded;
@@ -216,7 +218,7 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(1f);
     }
     //function for bouncing on enemies (also calls the function in enemy code to stun him)
-    public void EnemyBounce()
+    private void EnemyBounce()
     {
         var hitInfo = Physics2D.OverlapCircle(groundCheck.position, 0.3f, LayerMask.GetMask("Enemy"));
         if (hitInfo != null)
@@ -244,6 +246,12 @@ public class PlayerController : MonoBehaviour
         {
             _rigidbody2D.gravityScale = -4f;
         }
+
+        if (other.transform.CompareTag("Key"))
+        {
+            Destroy(other.gameObject);
+            key = true;
+        }
     }
     private void OnTriggerExit2D(Collider2D other)
     {
@@ -252,4 +260,5 @@ public class PlayerController : MonoBehaviour
             _rigidbody2D.gravityScale = 2f;
         }
     }
+    
 }
