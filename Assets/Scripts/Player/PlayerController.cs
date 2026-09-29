@@ -148,6 +148,7 @@ public class PlayerController : MonoBehaviour
         Gizmos.color = Color.darkRed;
         Gizmos.DrawWireCube(groundCheck.position, groundBoxSize);
     }
+    // function for dashing and logic VV
     private IEnumerator Dash()
     {
         if (_input.Horizontal == 0 && _input.Vertical == 0)

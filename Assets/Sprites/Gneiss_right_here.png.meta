@@ -1,0 +1,964 @@
+fileFormatVersion: 2
+guid: 8e707432ea6724b4595feb262d7e526f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2824281440806452067
+    second: Gneiss_right_here_0
+  - first:
+      213: -2955499546505106792
+    second: Gneiss_right_here_1
+  - first:
+      213: 3004266088153210077
+    second: Gneiss_right_here_2
+  - first:
+      213: 4503686065116412969
+    second: Gneiss_right_here_3
+  - first:
+      213: 6183226885918479865
+    second: Gneiss_right_here_4
+  - first:
+      213: 4402232659150350186
+    second: Gneiss_right_here_5
+  - first:
+      213: -2097782931172993149
+    second: Gneiss_right_here_6
+  - first:
+      213: -7941196558561327150
+    second: Gneiss_right_here_7
+  - first:
+      213: -2807378735212775328
+    second: Gneiss_right_here_8
+  - first:
+      213: -5346635477431953507
+    second: Gneiss_right_here_9
+  - first:
+      213: 609167427801787197
+    second: Gneiss_right_here_10
+  - first:
+      213: 195400007621832858
+    second: Gneiss_right_here_11
+  - first:
+      213: -5824783480990115259
+    second: Gneiss_right_here_12
+  - first:
+      213: 7316690911841583493
+    second: Gneiss_right_here_13
+  - first:
+      213: 4211141434187172982
+    second: Gneiss_right_here_14
+  - first:
+      213: 3062423137835751360
+    second: Gneiss_right_here_15
+  - first:
+      213: -5470083343953241448
+    second: Gneiss_right_here_16
+  - first:
+      213: -8457258498539754204
+    second: Gneiss_right_here_17
+  - first:
+      213: -1966039221307015798
+    second: Gneiss_right_here_18
+  - first:
+      213: -1556064901189264002
+    second: Gneiss_right_here_19
+  - first:
+      213: -1751728854764517652
+    second: Gneiss_right_here_20
+  - first:
+      213: 3566192724358385517
+    second: Gneiss_right_here_21
+  - first:
+      213: 7795242413729931315
+    second: Gneiss_right_here_22
+  - first:
+      213: 7812971242194717447
+    second: Gneiss_right_here_23
+  - first:
+      213: -303680738414702120
+    second: Gneiss_right_here_24
+  - first:
+      213: -5704469720292749473
+    second: Gneiss_right_here_25
+  - first:
+      213: -944982923836797927
+    second: Gneiss_right_here_26
+  - first:
+      213: 4700362848865209886
+    second: Gneiss_right_here_27
+  - first:
+      213: 3776608942120797929
+    second: Gneiss_right_here_28
+  - first:
+      213: 33973291550375356
+    second: Gneiss_right_here_29
+  - first:
+      213: -3783706829482482407
+    second: Gneiss_right_here_30
+  - first:
+      213: 3319440459082435084
+    second: Gneiss_right_here_31
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Gneiss_right_here_0
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 20
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36b3ff8b10dd13720800000000000000
+      internalID: 2824281440806452067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gneiss_right_here_1
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 19
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89a2cb442d4fbf6d0800000000000000
+      internalID: -2955499546505106792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gneiss_right_here_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 19
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddcdf13071c41b920800000000000000
+      internalID: 3004266088153210077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gneiss_right_here_3
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 23
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92cf32b5d9e408e30800000000000000
+      internalID: 4503686065116412969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gneiss_right_here_4
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 23
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f5d0d4b71c3fc550800000000000000
+      internalID: 6183226885918479865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gneiss_right_here_5
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 20
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a67a74b874fd71d30800000000000000
+      internalID: 4402232659150350186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gneiss_right_here_6
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 18
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3875e83e98d23e2e0800000000000000
+      internalID: -2097782931172993149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gneiss_right_here_7
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 20
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d7c563edc33bc190800000000000000
+      internalID: -7941196558561327150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gneiss_right_here_8
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 22
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06838a91aef2a09d0800000000000000
+      internalID: -2807378735212775328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gneiss_right_here_9
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 20
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d97da286c5fecc5b0800000000000000
+      internalID: -5346635477431953507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gneiss_right_here_10
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 19
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3b2dde4c82347800800000000000000
+      internalID: 609167427801787197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gneiss_right_here_11
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 19
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a90786b854336b200800000000000000
+      internalID: 195400007621832858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gneiss_right_here_12
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 23
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54a550af8463a2fa0800000000000000
+      internalID: -5824783480990115259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gneiss_right_here_13
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 23
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58185ab6e9b1a8560800000000000000
+      internalID: 7316690911841583493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gneiss_right_here_14
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 20
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67cc7a3a2daf07a30800000000000000
+      internalID: 4211141434187172982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gneiss_right_here_15
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 17
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c713a25e99ef7a20800000000000000
+      internalID: 3062423137835751360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gneiss_right_here_16
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 20
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89ad2ef2e2c5614b0800000000000000
+      internalID: -5470083343953241448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gneiss_right_here_17
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 20
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42d62ec3438c1aa80800000000000000
+      internalID: -8457258498539754204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gneiss_right_here_18
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 19
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8d7287aeb937b4e0800000000000000
+      internalID: -1966039221307015798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gneiss_right_here_19
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 6
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7d192d773fb76ae0800000000000000
+      internalID: -1556064901189264002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gneiss_right_here_20
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 11
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce685fc33eb90b7e0800000000000000
+      internalID: -1751728854764517652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gneiss_right_here_21
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 11
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6fc6f76369ad7130800000000000000
+      internalID: 3566192724358385517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gneiss_right_here_22
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 14
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3306e60aca34e2c60800000000000000
+      internalID: 7795242413729931315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gneiss_right_here_23
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 15
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70bcb5b23ff3d6c60800000000000000
+      internalID: 7812971242194717447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gneiss_right_here_24
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 5
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d1d9a53afb19cbf0800000000000000
+      internalID: -303680738414702120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gneiss_right_here_25
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 15
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5f8af15307a5d0b0800000000000000
+      internalID: -5704469720292749473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gneiss_right_here_26
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 13
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91cc5e9990fb2e2f0800000000000000
+      internalID: -944982923836797927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gneiss_right_here_27
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 10
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1ecd028b1b0b3140800000000000000
+      internalID: 4700362848865209886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gneiss_right_here_28
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 7
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e68ca2d2d5396430800000000000000
+      internalID: 3776608942120797929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gneiss_right_here_29
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 10
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbdf5b65782b87000800000000000000
+      internalID: 33973291550375356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gneiss_right_here_30
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 7
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9152a7e7fa29d7bc0800000000000000
+      internalID: -3783706829482482407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gneiss_right_here_31
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 10
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0a0ba8a285011e20800000000000000
+      internalID: 3319440459082435084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Gneiss_right_here_0: 2824281440806452067
+      Gneiss_right_here_1: -2955499546505106792
+      Gneiss_right_here_10: 609167427801787197
+      Gneiss_right_here_11: 195400007621832858
+      Gneiss_right_here_12: -5824783480990115259
+      Gneiss_right_here_13: 7316690911841583493
+      Gneiss_right_here_14: 4211141434187172982
+      Gneiss_right_here_15: 3062423137835751360
+      Gneiss_right_here_16: -5470083343953241448
+      Gneiss_right_here_17: -8457258498539754204
+      Gneiss_right_here_18: -1966039221307015798
+      Gneiss_right_here_19: -1556064901189264002
+      Gneiss_right_here_2: 3004266088153210077
+      Gneiss_right_here_20: -1751728854764517652
+      Gneiss_right_here_21: 3566192724358385517
+      Gneiss_right_here_22: 7795242413729931315
+      Gneiss_right_here_23: 7812971242194717447
+      Gneiss_right_here_24: -303680738414702120
+      Gneiss_right_here_25: -5704469720292749473
+      Gneiss_right_here_26: -944982923836797927
+      Gneiss_right_here_27: 4700362848865209886
+      Gneiss_right_here_28: 3776608942120797929
+      Gneiss_right_here_29: 33973291550375356
+      Gneiss_right_here_3: 4503686065116412969
+      Gneiss_right_here_30: -3783706829482482407
+      Gneiss_right_here_31: 3319440459082435084
+      Gneiss_right_here_4: 6183226885918479865
+      Gneiss_right_here_5: 4402232659150350186
+      Gneiss_right_here_6: -2097782931172993149
+      Gneiss_right_here_7: -7941196558561327150
+      Gneiss_right_here_8: -2807378735212775328
+      Gneiss_right_here_9: -5346635477431953507
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

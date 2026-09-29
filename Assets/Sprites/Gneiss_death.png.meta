@@ -1,0 +1,782 @@
+fileFormatVersion: 2
+guid: 79881359f9b95ac41944e278fc31d4f0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2718925403282148909
+    second: Gneiss_death_0
+  - first:
+      213: -4287161641240789564
+    second: Gneiss_death_1
+  - first:
+      213: 7424562163903808611
+    second: Gneiss_death_2
+  - first:
+      213: 3839895076235094191
+    second: Gneiss_death_3
+  - first:
+      213: -5486189849415281390
+    second: Gneiss_death_4
+  - first:
+      213: -4243902408558126472
+    second: Gneiss_death_5
+  - first:
+      213: 7180879533901239737
+    second: Gneiss_death_6
+  - first:
+      213: 620980541940018368
+    second: Gneiss_death_7
+  - first:
+      213: 7740090106586739655
+    second: Gneiss_death_8
+  - first:
+      213: -7843381047402967941
+    second: Gneiss_death_9
+  - first:
+      213: -2712495171012125488
+    second: Gneiss_death_10
+  - first:
+      213: 6090011997946745992
+    second: Gneiss_death_11
+  - first:
+      213: -6307136858368336495
+    second: Gneiss_death_12
+  - first:
+      213: -9109422013710875539
+    second: Gneiss_death_13
+  - first:
+      213: -8389430549266079773
+    second: Gneiss_death_14
+  - first:
+      213: 4937175764407409985
+    second: Gneiss_death_15
+  - first:
+      213: 6240161741459733180
+    second: Gneiss_death_16
+  - first:
+      213: -7535419782142828788
+    second: Gneiss_death_17
+  - first:
+      213: -2182982396278084927
+    second: Gneiss_death_18
+  - first:
+      213: 2054909275840406664
+    second: Gneiss_death_19
+  - first:
+      213: 1257437617295123510
+    second: Gneiss_death_20
+  - first:
+      213: 2003889326917510170
+    second: Gneiss_death_21
+  - first:
+      213: 5985732629741619045
+    second: Gneiss_death_22
+  - first:
+      213: 1389320240693599180
+    second: Gneiss_death_23
+  - first:
+      213: -6907421922978714103
+    second: Gneiss_death_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Gneiss_death_0
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 2
+        width: 55
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d1f49e40cf644ad0800000000000000
+      internalID: -2718925403282148909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gneiss_death_1
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 0
+        width: 130
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cd792f9331f084c0800000000000000
+      internalID: -4287161641240789564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gneiss_death_2
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 364ca4873f7590760800000000000000
+      internalID: 7424562163903808611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gneiss_death_3
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 41
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa8a3c92a3c0a4530800000000000000
+      internalID: 3839895076235094191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gneiss_death_4
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 56
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2159f3726632dd3b0800000000000000
+      internalID: -5486189849415281390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gneiss_death_5
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 55
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87ad77c9e31aa15c0800000000000000
+      internalID: -4243902408558126472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gneiss_death_6
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 40
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b55e01e3eb97a360800000000000000
+      internalID: 7180879533901239737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gneiss_death_7
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 51
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cca3c6438a2e9800800000000000000
+      internalID: 620980541940018368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gneiss_death_8
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 58
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c33e9471f25a6b60800000000000000
+      internalID: 7740090106586739655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gneiss_death_9
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 55
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7cc38f4e76b62390800000000000000
+      internalID: -7843381047402967941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gneiss_death_10
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 54
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dc1cdc63084b5ad0800000000000000
+      internalID: -2712495171012125488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gneiss_death_11
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 49
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8849b7755a1148450800000000000000
+      internalID: 6090011997946745992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gneiss_death_12
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 17
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19d9e27a17c8878a0800000000000000
+      internalID: -6307136858368336495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gneiss_death_13
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 37
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d64c3ab31f4d49180800000000000000
+      internalID: -9109422013710875539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gneiss_death_14
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 26
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ef5f235d51c29b80800000000000000
+      internalID: -8389430549266079773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gneiss_death_15
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 21
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14ddb2f033f548440800000000000000
+      internalID: 4937175764407409985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gneiss_death_16
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 25
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbab0b4ca02899650800000000000000
+      internalID: 6240161741459733180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gneiss_death_17
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0fdcebe1afcc6790800000000000000
+      internalID: -7535419782142828788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gneiss_death_18
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 4
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cae9e6931d74b1e0800000000000000
+      internalID: -2182982396278084927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gneiss_death_19
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 0
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8846f185911848c10800000000000000
+      internalID: 2054909275840406664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gneiss_death_20
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 7
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 634e61ac9d0537110800000000000000
+      internalID: 1257437617295123510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gneiss_death_21
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 8
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a146d1cc9be3fcb10800000000000000
+      internalID: 2003889326917510170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gneiss_death_22
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 2
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 567c63cec18911350800000000000000
+      internalID: 5985732629741619045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gneiss_death_23
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 12
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccb5dc1e56bd74310800000000000000
+      internalID: 1389320240693599180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gneiss_death_24
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 4
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90eab1fab58e320a0800000000000000
+      internalID: -6907421922978714103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Gneiss_death_0: -2718925403282148909
+      Gneiss_death_1: -4287161641240789564
+      Gneiss_death_10: -2712495171012125488
+      Gneiss_death_11: 6090011997946745992
+      Gneiss_death_12: -6307136858368336495
+      Gneiss_death_13: -9109422013710875539
+      Gneiss_death_14: -8389430549266079773
+      Gneiss_death_15: 4937175764407409985
+      Gneiss_death_16: 6240161741459733180
+      Gneiss_death_17: -7535419782142828788
+      Gneiss_death_18: -2182982396278084927
+      Gneiss_death_19: 2054909275840406664
+      Gneiss_death_2: 7424562163903808611
+      Gneiss_death_20: 1257437617295123510
+      Gneiss_death_21: 2003889326917510170
+      Gneiss_death_22: 5985732629741619045
+      Gneiss_death_23: 1389320240693599180
+      Gneiss_death_24: -6907421922978714103
+      Gneiss_death_3: 3839895076235094191
+      Gneiss_death_4: -5486189849415281390
+      Gneiss_death_5: -4243902408558126472
+      Gneiss_death_6: 7180879533901239737
+      Gneiss_death_7: 620980541940018368
+      Gneiss_death_8: 7740090106586739655
+      Gneiss_death_9: -7843381047402967941
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
