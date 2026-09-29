@@ -218,10 +218,12 @@ public class PlayerController : MonoBehaviour
     //function for bouncing on enemies (also calls the function in enemy code to stun him)
     public void EnemyBounce()
     {
-        if (!Physics2D.OverlapCircle(groundCheck.position, 0.2f,
-                LayerMask.GetMask("Enemy"))) return;
+        var hitInfo = Physics2D.OverlapCircle(groundCheck.position, 0.3f, LayerMask.GetMask("Enemy"));
+        if (hitInfo != null)
         {
-            _enemyPatrol.Squish();
+            hitInfo.TryGetComponent(out EnemyPatrol enemy);
+            enemy.Squish();
+            
             _rigidbody2D.linearVelocityY = jumpSpeed * 1.5f;
         }
     }
@@ -232,6 +234,22 @@ public class PlayerController : MonoBehaviour
         {
             isDead = true;
             StartCoroutine(DeathAnimation());
+        }
+    }
+
+    // functions for the fan air to push the player up
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.transform.CompareTag("Fan Air"))
+        {
+            _rigidbody2D.gravityScale = -4f;
+        }
+    }
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.transform.CompareTag("Fan Air"))
+        {
+            _rigidbody2D.gravityScale = 2f;
         }
     }
 }
