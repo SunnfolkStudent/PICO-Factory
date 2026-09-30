@@ -21,7 +21,8 @@ public class OvenEnemy : MonoBehaviour
     private Animator _animator;
     private SpriteRenderer _spriterenderer;
     private BoxCollider2D flameTowerHitBox;
-    public BoxCollider2D flameExplosionHitBox;
+    public BoxCollider2D flameExplosionHitBoxL;
+    public BoxCollider2D flameExplosionHitBoxR;
 
     private void Awake()
     {
@@ -29,13 +30,15 @@ public class OvenEnemy : MonoBehaviour
         _animator = GetComponent<Animator>();
         _spriterenderer = GetComponent<SpriteRenderer>();
         flameTowerHitBox = transform.GetChild(0).gameObject.GetComponent<BoxCollider2D>();
-        flameExplosionHitBox = transform.GetChild(1).gameObject.GetComponent<BoxCollider2D>();
+        flameExplosionHitBoxL = transform.GetChild(1).gameObject.GetComponent<BoxCollider2D>();
+        flameExplosionHitBoxR = transform.GetChild(2).gameObject.GetComponent<BoxCollider2D>();
     }
 
     private void Start()
     {
         flameTowerHitBox.enabled = false;
-        flameExplosionHitBox.enabled = false;
+        flameExplosionHitBoxL.enabled = false;
+        flameExplosionHitBoxR.enabled = false;
     }
     // Update is called once per frame
     void Update()
@@ -98,9 +101,11 @@ public class OvenEnemy : MonoBehaviour
         attacking = true;
         yield return new WaitForSeconds(attackWindUp);
         flameTowerHitBox.enabled = true;
-        flameExplosionHitBox.enabled = true;
+        flameExplosionHitBoxL.enabled = true;
+        flameExplosionHitBoxR.enabled = true;
         yield return new WaitForSeconds(explosionTime);
-        flameExplosionHitBox.enabled = false;
+        flameExplosionHitBoxL.enabled = false;
+        flameExplosionHitBoxR.enabled = false;
         yield return new WaitForSeconds(towerTime);
         attacking = false;
     }
