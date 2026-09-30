@@ -3,9 +3,17 @@ using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Random = UnityEngine.Random;
 
 public class PlayerController : MonoBehaviour
 {
+    // Audio Variables VV
+    public AudioClip deathSound;
+    public AudioClip[] jumpSounds;
+    public AudioClip[] hurtSounds;
+    public AudioClip[] moveSounds;
+    private AudioSource _audioSource;
+
     // Dash Variables VV
     private int canDash = 1;
     private bool isDashing; 
@@ -43,8 +51,9 @@ public class PlayerController : MonoBehaviour
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
         _trailRenderer = GetComponent<TrailRenderer>();
+        _audioSource = GetComponent<AudioSource>();
     }
-
+    
     private void Update()
     {
         isGrounded = Physics2D.OverlapBox
@@ -58,6 +67,7 @@ public class PlayerController : MonoBehaviour
         {
             // Code for jumping
             _rigidbody2D.linearVelocityY = jumpSpeed;
+            PlayRandomAudio(jumpSounds); 
         }
         if (_input.Horizontal > 0)
         {
@@ -79,6 +89,19 @@ public class PlayerController : MonoBehaviour
         if (landing) return;
         // plays the correct animation every frame
         UpdateAnimation();
+    }
+    
+    // Audio Code VVV 
+    public void WalkSound()
+    {
+        PlayRandomAudio(moveSounds);
+    }
+    
+    private void PlayRandomAudio(AudioClip[] randomSounds)
+    {
+        var i = Random.Range(0, randomSounds.Length);
+        _audioSource.pitch = Random.Range(0.7f, 1.3f);
+        _audioSource.PlayOneShot(randomSounds[i]);
     }
 
     private void FixedUpdate()
