@@ -351,9 +351,10 @@ public class PlayerController : MonoBehaviour
            _rigidbody2D.linearVelocityY = jumpSpeed * 1.5f;
        }
    }
-   
+
    private void OnCollisionEnter2D(Collision2D other)
-   {    // plays death animation and does death logic if touched "death"
+   {
+       // plays death animation and does death logic if touched "death"
        if (other.transform.CompareTag("Death"))
        {
            isDead = true;
@@ -361,6 +362,7 @@ public class PlayerController : MonoBehaviour
            //PlayRandomAudio(deathSound); --- Doesn't Work!
            _audioSource.PlayOneShot(deathSound);
        }
+
        // open door if the player has the key of the level
        if (other.transform.CompareTag("Door"))
        {
@@ -370,13 +372,16 @@ public class PlayerController : MonoBehaviour
            }
        }
        // Conveyor Belt Code VVV
+   }
+   private void OnCollisionStay2D(Collision2D other)
+   { 
        if (other.transform.CompareTag("Conveyor Belt Left"))
        {
-           moveBoost = 0;
+           moveBoost = -1;
        }
        if (other.transform.CompareTag("Conveyor Belt Right"))
        {
-           moveBoost = 0;
+           moveBoost = 1;
        }
    }
 
