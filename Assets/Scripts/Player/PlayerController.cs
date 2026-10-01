@@ -179,8 +179,6 @@ public class PlayerController : MonoBehaviour
            _rigidbody2D.linearVelocityX = (_input.Horizontal * moveSpeed);
        }
      
-       // movement code
-     
    }   
    
    // is Called Last of all updates
@@ -372,11 +370,11 @@ public class PlayerController : MonoBehaviour
            }
        }
        // Conveyor Belt Code VVV
-       //if (other.transform.CompareTag("Conveyor Belt Left"))
+       if (other.transform.CompareTag("Conveyor Belt Left"))
        {
            moveBoost = 0;
        }
-       //if (other.transform.CompareTag("Conveyor Belt Right"))
+       if (other.transform.CompareTag("Conveyor Belt Right"))
        {
            moveBoost = 0;
        }
@@ -384,8 +382,8 @@ public class PlayerController : MonoBehaviour
 
    private void OnCollisionExit2D(Collision2D other)
    {
-       //if (other.transform.CompareTag("Conveyor Belt Left") 
-           //|| other.transform.CompareTag("Conveyor Belt Right"))
+       if (other.transform.CompareTag("Conveyor Belt Left") 
+           || other.transform.CompareTag("Conveyor Belt Right"))
        {
            moveBoost = 0;
        }

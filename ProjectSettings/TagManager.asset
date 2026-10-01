@@ -11,6 +11,8 @@ TagManager:
   - Checkpoint
   - Button
   - Door
+  - Conveyor Belt Right
+  - Conveyor Belt Left
   layers:
   - Default
   - TransparentFX
