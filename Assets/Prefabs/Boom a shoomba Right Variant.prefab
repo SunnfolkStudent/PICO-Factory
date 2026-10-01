@@ -63,10 +63,10 @@ PrefabInstance:
     - target: {fileID: 4462943624450712359, guid: e891aef1e934fc644995009171a04994, type: 3}
       propertyPath: bullet
       value: 
-      objectReference: {fileID: 897572725683744230, guid: 91335b2d74479f743baa3950a231101a, type: 3}
+      objectReference: {fileID: 1328281000246076387, guid: ec8f6f46477c12748872cded5e7ae789, type: 3}
     - target: {fileID: 5251386672386602161, guid: e891aef1e934fc644995009171a04994, type: 3}
       propertyPath: m_Name
-      value: Boom a shoomba Right
+      value: Boom a shoomba Right Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
