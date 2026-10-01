@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
    // Audio Variables VV
    public AudioClip deathSound;
    public AudioClip[] jumpSounds;
-   public AudioClip[] hurtSounds;
+   public AudioClip[] dashSounds;
    public AudioClip[] moveSounds;
    private AudioSource _audioSource;
 
@@ -89,7 +89,15 @@ public class PlayerController : MonoBehaviour
    }
    
    private void Update()
-   {
+   { //////// Dash Audio VVV 
+       if (isDashing)
+       {
+           var i = Random.Range(0, dashSounds.Length);
+           _audioSource.pitch = Random.Range(0.9f, 1.3f);
+           _audioSource.PlayOneShot(dashSounds[i]);
+       }
+       
+       
        isGrounded = Physics2D.OverlapBox
        (groundCheck.position,
            groundBoxSize, 0f, groundLayer) 

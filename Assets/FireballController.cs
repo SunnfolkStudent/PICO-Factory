@@ -16,7 +16,7 @@ public class FireballController : MonoBehaviour
     {
         if (other.transform.CompareTag("Death"))
         {
-            transform.position = new Vector3(transform.position.y, 9f);
+            transform.position = new Vector3(transform.position.x, 9f);
         }
     }
 }
