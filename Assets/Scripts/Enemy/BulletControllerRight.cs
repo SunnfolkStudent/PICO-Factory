@@ -15,8 +15,11 @@ public class BulletControllerRight : MonoBehaviour
     {
         rb.linearVelocity = new Vector2(moveSpeed, 0);
     }
-    private void OnCollisionEnter2D(Collision2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Death"));
+        {
+            Destroy(gameObject);
+        }
     }
 }
