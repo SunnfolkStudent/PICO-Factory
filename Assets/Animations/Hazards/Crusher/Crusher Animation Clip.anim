@@ -517,4 +517,32 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0.06666667
+    functionName: PlaySpecificClip
+    data: 
+    objectReferenceParameter: {fileID: 8300000, guid: f18f797c7a47d7d45a7959381101b3b2, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.23333333
+    functionName: PlaySpecificClip
+    data: 
+    objectReferenceParameter: {fileID: 8300000, guid: e09e44706e73f3748b5029d49bb8a07d, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.35
+    functionName: PlaySpecificClip
+    data: 
+    objectReferenceParameter: {fileID: 8300000, guid: f76bef11d64b75f4e8d127996df3983d, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.51666665
+    functionName: PlaySpecificClip
+    data: 
+    objectReferenceParameter: {fileID: 8300000, guid: f976424676ee3394698d23bbbab102a9, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0

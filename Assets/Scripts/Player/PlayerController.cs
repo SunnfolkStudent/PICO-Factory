@@ -47,6 +47,7 @@ public class PlayerController : MonoBehaviour
    public bool isGrounded;
    public Transform groundCheck;
    public LayerMask groundLayer;
+   public LayerMask OneWayLayer;
    public Vector2 groundBoxSize = new Vector2(0.8f, 0.2f);
 
    void Awake()
@@ -87,7 +88,10 @@ public class PlayerController : MonoBehaviour
    {
        isGrounded = Physics2D.OverlapBox
        (groundCheck.position,
-           groundBoxSize, 0f, groundLayer);
+           groundBoxSize, 0f, groundLayer) 
+                    || Physics2D.OverlapBox (groundCheck.position, 
+                        groundBoxSize, 0f, OneWayLayer);
+       
        if (isGrounded)
        {
            canDash = 1;
