@@ -75,7 +75,7 @@ public class PlayerController : MonoBehaviour
        _boxCollider2D = GetComponent<BoxCollider2D>();
        _spawnpoint = GameObject.Find("Spawnpoint");
        _DoorAnimator = GameObject.Find("Grid").transform.GetChild(0).transform.GetComponent<Animator>();
-       //transform.position = _spawnpoint.transform.position;
+       transform.position = _spawnpoint.transform.position;
    }
    private IEnumerator AfterDeath()
    {
@@ -411,10 +411,14 @@ public class PlayerController : MonoBehaviour
    private void OnTriggerEnter2D(Collider2D other)
    {
        // Finish line code VVV 
-       if (other.transform.CompareTag("Finish0"))
+       if (other.transform.CompareTag("Finish"))
        {
            PlayerPrefs.DeleteAll();
-           SceneManager.LoadScene("Level 1");
+           if (SceneManager.GetActiveScene().name == "Level 1")
+           {
+               SceneManager.LoadScene("Level2");
+           }
+           
        }
        
        if (other.transform.CompareTag("Fan Air"))
