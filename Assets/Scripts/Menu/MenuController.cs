@@ -1,8 +1,15 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class MenuController : MonoBehaviour
 {
+    // What am I even doing here? VVV 
+    public void StartGame()
+    {
+        SceneManager.LoadScene("Level1");
+    }
+    
     public EventSystem eventSystem;
     
     public RectTransform arrow;
