@@ -59,7 +59,8 @@ public class PlayerController : MonoBehaviour
 
    void Awake()
    {
-       transform.position = new Vector2(PlayerPrefs.GetFloat("PlayerPosX"), PlayerPrefs.GetFloat("PlayerPosY"));
+       PlayerPrefs.DeleteAll();
+       //SceneManager.LoadScene(PlayerPrefs.GetString("Saved Scene"));
    }
    
    
@@ -74,6 +75,7 @@ public class PlayerController : MonoBehaviour
        _boxCollider2D = GetComponent<BoxCollider2D>();
        _spawnpoint = GameObject.Find("Spawnpoint");
        _DoorAnimator = GameObject.Find("Grid").transform.GetChild(0).transform.GetComponent<Animator>();
+       //transform.position = _spawnpoint.transform.position;
    }
    private IEnumerator AfterDeath()
    {
@@ -83,8 +85,7 @@ public class PlayerController : MonoBehaviour
 
    private void GetCheckpoint()
    {
-       PlayerPrefs.SetFloat("PlayerPosX", transform.position.x);
-       PlayerPrefs.SetFloat("PlayerPosY", transform.position.y);
+       PlayerPrefs.SetString("Saved Scene", SceneManager.GetActiveScene().name);
    }
 
    private void resetPrefs()

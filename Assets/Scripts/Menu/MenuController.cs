@@ -9,9 +9,23 @@ public class MenuController : MonoBehaviour
     {
         SceneManager.LoadScene("Level1");
     }
+
+    public void Continue()
+    {
+        SceneManager.LoadScene(PlayerPrefs.GetString("Saved Scene"));
+    }
+
+    public void Controls()
+    {
+        SceneManager.LoadScene("Controls");
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
     
     public EventSystem eventSystem;
-    
     public RectTransform arrow;
     
     // Update is called once per frame
