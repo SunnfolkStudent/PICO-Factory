@@ -1,9 +1,8 @@
-using System;
 using UnityEngine;
 
-public class BulletController : MonoBehaviour
+public class BulletControllerRight : MonoBehaviour
 {
-    private float moveSpeed = -3f;
+    private float moveSpeed = 3f;
     
     private Rigidbody2D rb;
 
@@ -16,7 +15,6 @@ public class BulletController : MonoBehaviour
     {
         rb.linearVelocity = new Vector2(moveSpeed, 0);
     }
-
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Death"));
