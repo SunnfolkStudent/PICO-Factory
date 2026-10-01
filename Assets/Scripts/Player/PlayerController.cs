@@ -416,9 +416,40 @@ public class PlayerController : MonoBehaviour
            PlayerPrefs.DeleteAll();
            if (SceneManager.GetActiveScene().name == "Level 1")
            {
-               SceneManager.LoadScene("Level2");
+               SceneManager.LoadScene("Level 2");
            }
-           
+           if (SceneManager.GetActiveScene().name == "Level 2")
+           {
+               SceneManager.LoadScene("Level 3");
+           }
+           if (SceneManager.GetActiveScene().name == "Level 3")
+           {
+               SceneManager.LoadScene("Level 4");
+           }
+           if (SceneManager.GetActiveScene().name == "Level 4")
+           {
+               SceneManager.LoadScene("Level 5");
+           }
+           if (SceneManager.GetActiveScene().name == "Level 5")
+           {
+               SceneManager.LoadScene("Level 6");
+           }
+           if (SceneManager.GetActiveScene().name == "Level 6")
+           {
+               SceneManager.LoadScene("Level 7");
+           }
+           if (SceneManager.GetActiveScene().name == "Level 7")
+           {
+               SceneManager.LoadScene("Level 8");
+           }
+           if (SceneManager.GetActiveScene().name == "Level 8")
+           {
+               SceneManager.LoadScene("Level 9");
+           }
+           if (SceneManager.GetActiveScene().name == "Level 9")
+           {
+               SceneManager.LoadScene("Level 10");
+           }
        }
        
        if (other.transform.CompareTag("Fan Air"))

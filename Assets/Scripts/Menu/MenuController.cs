@@ -7,7 +7,7 @@ public class MenuController : MonoBehaviour
     // What am I even doing here? VVV 
     public void StartGame()
     {
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("Level 1");
     }
 
     public void Continue()
