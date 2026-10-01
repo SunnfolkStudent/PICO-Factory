@@ -405,6 +405,13 @@ public class PlayerController : MonoBehaviour
    // functions for the fan air to push the player up
    private void OnTriggerEnter2D(Collider2D other)
    {
+       // Finish line code VVV 
+       if (other.transform.CompareTag("Finish0"))
+       {
+           PlayerPrefs.DeleteAll();
+           SceneManager.LoadScene("Level 1");
+       }
+       
        if (other.transform.CompareTag("Fan Air"))
        {
            _rigidbody2D.gravityScale = -4f;

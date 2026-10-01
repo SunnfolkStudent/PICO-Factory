@@ -13,6 +13,7 @@ TagManager:
   - Door
   - Conveyor Belt Right
   - Conveyor Belt Left
+  - Finish0
   layers:
   - Default
   - TransparentFX

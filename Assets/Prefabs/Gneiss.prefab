@@ -210,7 +210,8 @@ MonoBehaviour:
   deathSound: {fileID: 8300000, guid: 62ac75a8ed2a1b045ac87e337d44c83c, type: 3}
   jumpSounds:
   - {fileID: 8300000, guid: 195040243a38c764ea34bd88327a5a2b, type: 3}
-  hurtSounds: []
+  dashSounds:
+  - {fileID: 8300000, guid: 57dbfa02f22766945b16e8ddb429b263, type: 3}
   moveSounds:
   - {fileID: 8300000, guid: 42605187b5f9ade4693cc23d1e374680, type: 3}
   _trailRenderer: {fileID: 0}
