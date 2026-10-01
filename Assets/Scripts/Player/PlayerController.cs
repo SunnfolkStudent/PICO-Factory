@@ -28,14 +28,14 @@ public class PlayerController : MonoBehaviour
    public bool landing;
    public float VelocityY;
   
-   // component variables VV
+   // component and other game Object variables VV
    private InputController _input;
    private Rigidbody2D _rigidbody2D;
    private Animator _animator;
    private EnemyPatrol _enemyPatrol;
    private BoxCollider2D _boxCollider2D;
    private GameObject _spawnpoint;
-
+   private Animator _DoorAnimator;
 
    // movement and jump speed and death lol VVV
    public float moveSpeed;
@@ -64,6 +64,7 @@ public class PlayerController : MonoBehaviour
        _audioSource = GetComponent<AudioSource>();
        _boxCollider2D = GetComponent<BoxCollider2D>();
        _spawnpoint = GameObject.Find("Spawnpoint");
+       _DoorAnimator = GameObject.Find("Grid").transform.GetChild(0).transform.GetComponent<Animator>();
    }
    private IEnumerator AfterDeath()
    {
@@ -71,7 +72,7 @@ public class PlayerController : MonoBehaviour
        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
    }
 
-   private void getCheckpoint()
+   private void GetCheckpoint()
    {
        PlayerPrefs.SetFloat("PlayerPosX", transform.position.x);
        PlayerPrefs.SetFloat("PlayerPosY", transform.position.y);
@@ -141,8 +142,7 @@ public class PlayerController : MonoBehaviour
        _audioSource.pitch = Random.Range(0.8f, 1.3f);
        _audioSource.PlayOneShot(randomSounds[i]);
    }
-
-
+   
    private void FixedUpdate()
    {
        //checks if the player is currently dashing, making the player unable to move
@@ -153,9 +153,9 @@ public class PlayerController : MonoBehaviour
       
        // movement code
        _rigidbody2D.linearVelocityX = _input.Horizontal * moveSpeed;
-   }
-
-
+   }   
+   
+   // is Called Last of all updates
    public void LateUpdate()
    {
        VelocityY = _rigidbody2D.linearVelocityY;
@@ -208,17 +208,20 @@ public class PlayerController : MonoBehaviour
        }
       
    }
+   
    // function for starting the "LandStun" Enumerator
    private void Land()
    {
        StartCoroutine(LandStun());
    }
+   
    // Visualizes the hitbox for "groundCheck".
    private void OnDrawGizmos()
    {
        Gizmos.color = Color.darkRed;
        Gizmos.DrawWireCube(groundCheck.position, groundBoxSize);
    }
+   
    // function for dashing and logic VV
    private IEnumerator Dash()
    {
@@ -265,7 +268,7 @@ public class PlayerController : MonoBehaviour
        _rigidbody2D.gravityScale = 2f;
        _trailRenderer.emitting = false;
    }
-  
+   
    //function for Land animation and logic
    private IEnumerator LandStun()
    {
@@ -275,12 +278,13 @@ public class PlayerController : MonoBehaviour
        yield return new WaitForSeconds(0.5f);
        landing = false;
    }
-
-
+   
+   // allow the Death animation to play?
    private IEnumerator DeathAnimation()
    {
        yield return new WaitForSeconds(1f);
    }
+   
    //function for bouncing on enemies (also calls the function in enemy code to stun him)
    private void EnemyBounce()
    {
@@ -293,9 +297,9 @@ public class PlayerController : MonoBehaviour
            _rigidbody2D.linearVelocityY = jumpSpeed * 1.5f;
        }
    }
-   //Death Tag VVV
+   
    private void OnCollisionEnter2D(Collision2D other)
-   {
+   {    // plays death animation and does death logic if touched "death"
        if (other.transform.CompareTag("Death"))
        {
            isDead = true;
@@ -303,9 +307,15 @@ public class PlayerController : MonoBehaviour
            //PlayRandomAudio(deathSound); --- Doesn't Work!
            _audioSource.PlayOneShot(deathSound);
        }
+       // open door if the player has the key of the level
+       if (other.transform.CompareTag("Door"))
+       {
+           if (key)
+           { 
+               _DoorAnimator.Play("Door Open");
+           }
+       }
    }
-
-
    // functions for the fan air to push the player up
    private void OnTriggerEnter2D(Collider2D other)
    {
@@ -322,7 +332,7 @@ public class PlayerController : MonoBehaviour
 
        if (other.transform.CompareTag("Checkpoint"))
        {
-           getCheckpoint();
+           GetCheckpoint();
        }
    }
    private void OnTriggerExit2D(Collider2D other)

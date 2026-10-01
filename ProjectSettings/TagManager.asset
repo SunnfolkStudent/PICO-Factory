@@ -9,6 +9,8 @@ TagManager:
   - Fan Air
   - Key
   - Checkpoint
+  - Button
+  - Door
   layers:
   - Default
   - TransparentFX
