@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 7783585224742036708}
   - component: {fileID: 738088009460156780}
   - component: {fileID: 1935204251699179768}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Gneiss
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -218,6 +218,7 @@ MonoBehaviour:
   VelocityY: 0
   moveSpeed: 5
   jumpSpeed: 9.5
+  moveBoost: 0
   isDead: 0
   key: 0
   isGrounded: 0
@@ -225,6 +226,9 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
+  OneWayLayer:
+    serializedVersion: 2
+    m_Bits: 256
   groundBoxSize: {x: 0.58, y: 0.1}
 --- !u!114 &7783585224742036708
 MonoBehaviour:
@@ -249,7 +253,7 @@ TrailRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3119971239959745790}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -457,7 +461,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2766477993875896343}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
