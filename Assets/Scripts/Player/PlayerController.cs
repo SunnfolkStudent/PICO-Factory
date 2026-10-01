@@ -4,6 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
+using Scene = Unity.VectorGraphics.Scene;
 
 
 public class PlayerController : MonoBehaviour
@@ -50,6 +51,8 @@ public class PlayerController : MonoBehaviour
    public LayerMask groundLayer;
    public LayerMask OneWayLayer;
    public Vector2 groundBoxSize = new Vector2(0.8f, 0.2f);
+
+   
    
    
    
@@ -58,6 +61,7 @@ public class PlayerController : MonoBehaviour
    {
        transform.position = new Vector2(PlayerPrefs.GetFloat("PlayerPosX"), PlayerPrefs.GetFloat("PlayerPosY"));
    }
+   
    
    void Start()
    {
