@@ -2614,25 +2614,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 259198021070871179, guid: e2181b83f3d4e6943a5e0ce495e55117, type: 3}
-      propertyPath: OneWayLayer.m_Bits
-      value: 256
-      objectReference: {fileID: 0}
-    - target: {fileID: 259198021070871179, guid: e2181b83f3d4e6943a5e0ce495e55117, type: 3}
-      propertyPath: dashSounds.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 259198021070871179, guid: e2181b83f3d4e6943a5e0ce495e55117, type: 3}
-      propertyPath: 'dashSounds.Array.data[0]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 57dbfa02f22766945b16e8ddb429b263, type: 3}
     - target: {fileID: 3119971239959745790, guid: e2181b83f3d4e6943a5e0ce495e55117, type: 3}
       propertyPath: m_Name
       value: Gneiss
-      objectReference: {fileID: 0}
-    - target: {fileID: 3119971239959745790, guid: e2181b83f3d4e6943a5e0ce495e55117, type: 3}
-      propertyPath: m_Layer
-      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7006070672993589303, guid: e2181b83f3d4e6943a5e0ce495e55117, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2673,10 +2657,6 @@ PrefabInstance:
     - target: {fileID: 7006070672993589303, guid: e2181b83f3d4e6943a5e0ce495e55117, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9017965908373320855, guid: e2181b83f3d4e6943a5e0ce495e55117, type: 3}
-      propertyPath: m_Layer
-      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

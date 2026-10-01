@@ -7,7 +7,7 @@ public class BoomAController : MonoBehaviour
     private IEnumerator ShootCooldown()
     {
         yield return new WaitForSeconds(1);
-        _animator.
+        //_animator.
     }
     public void Shoot()
     {
