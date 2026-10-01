@@ -431,6 +431,14 @@ public class PlayerController : MonoBehaviour
        {
            GetCheckpoint();
        }
+      
+       if (other.transform.CompareTag("DeathHeatCoil"))
+       {
+           isDead = true;
+           StartCoroutine(DeathAnimation());
+           //PlayRandomAudio(deathSound); --- Doesn't Work!
+           _audioSource.PlayOneShot(deathSound);
+       }
    }
    private void OnTriggerExit2D(Collider2D other)
    {

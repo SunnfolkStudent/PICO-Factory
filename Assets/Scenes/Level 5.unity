@@ -187,9 +187,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3448196813307726505, guid: 939e540589d0a9f4cbd3b322074da3a6, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6010688660942452236, guid: 939e540589d0a9f4cbd3b322074da3a6, type: 3}
       propertyPath: m_Name
       value: Heat Coil (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6010688660942452236, guid: 939e540589d0a9f4cbd3b322074da3a6, type: 3}
+      propertyPath: m_TagString
+      value: DeathHeatCoil
       objectReference: {fileID: 0}
     - target: {fileID: 8324336759746987404, guid: 939e540589d0a9f4cbd3b322074da3a6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -853,9 +861,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3448196813307726505, guid: 939e540589d0a9f4cbd3b322074da3a6, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6010688660942452236, guid: 939e540589d0a9f4cbd3b322074da3a6, type: 3}
       propertyPath: m_Name
       value: Heat Coil (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6010688660942452236, guid: 939e540589d0a9f4cbd3b322074da3a6, type: 3}
+      propertyPath: m_TagString
+      value: DeathHeatCoil
       objectReference: {fileID: 0}
     - target: {fileID: 8324336759746987404, guid: 939e540589d0a9f4cbd3b322074da3a6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -972,9 +988,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3448196813307726505, guid: 939e540589d0a9f4cbd3b322074da3a6, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6010688660942452236, guid: 939e540589d0a9f4cbd3b322074da3a6, type: 3}
       propertyPath: m_Name
       value: Heat Coil (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6010688660942452236, guid: 939e540589d0a9f4cbd3b322074da3a6, type: 3}
+      propertyPath: m_TagString
+      value: DeathHeatCoil
       objectReference: {fileID: 0}
     - target: {fileID: 8324336759746987404, guid: 939e540589d0a9f4cbd3b322074da3a6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1336,9 +1360,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3448196813307726505, guid: 939e540589d0a9f4cbd3b322074da3a6, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6010688660942452236, guid: 939e540589d0a9f4cbd3b322074da3a6, type: 3}
       propertyPath: m_Name
       value: Heat Coil (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6010688660942452236, guid: 939e540589d0a9f4cbd3b322074da3a6, type: 3}
+      propertyPath: m_TagString
+      value: DeathHeatCoil
       objectReference: {fileID: 0}
     - target: {fileID: 8324336759746987404, guid: 939e540589d0a9f4cbd3b322074da3a6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1983,9 +2015,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3448196813307726505, guid: 939e540589d0a9f4cbd3b322074da3a6, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6010688660942452236, guid: 939e540589d0a9f4cbd3b322074da3a6, type: 3}
       propertyPath: m_Name
       value: Heat Coil (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6010688660942452236, guid: 939e540589d0a9f4cbd3b322074da3a6, type: 3}
+      propertyPath: m_TagString
+      value: DeathHeatCoil
       objectReference: {fileID: 0}
     - target: {fileID: 8324336759746987404, guid: 939e540589d0a9f4cbd3b322074da3a6, type: 3}
       propertyPath: m_LocalPosition.x
