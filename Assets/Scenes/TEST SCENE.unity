@@ -878,10 +878,16 @@ Tilemap:
   - serializedVersion: 2
     m_RefCount: 38
     m_Data: {fileID: 11400000, guid: eb2b35c2f9c3c7f46a319e458adb705c, type: 2}
+  - serializedVersion: 2
+    m_RefCount: 0
+    m_Data: {fileID: 11400000, guid: cd5497f3666ae4645b69ac5614eca19f, type: 2}
   m_TileSpriteArray:
   - serializedVersion: 2
     m_RefCount: 38
     m_Data: {fileID: -5265913153643140138, guid: 66efc833fc62325498bdd08364552a9d, type: 3}
+  - serializedVersion: 2
+    m_RefCount: 0
+    m_Data: {fileID: 1209120394, guid: 66efc833fc62325498bdd08364552a9d, type: 3}
   m_TileMatrixArray:
   - serializedVersion: 2
     m_RefCount: 38
@@ -909,8 +915,8 @@ Tilemap:
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Origin: {x: -10, y: -4, z: 0}
-  m_Size: {x: 20, y: 4, z: 1}
+  m_Origin: {x: -41, y: -7, z: 0}
+  m_Size: {x: 51, y: 7, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -988,17 +994,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 259198021070871179, guid: e2181b83f3d4e6943a5e0ce495e55117, type: 3}
+      propertyPath: moveBoost
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 738088009460156780, guid: e2181b83f3d4e6943a5e0ce495e55117, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3119971239959745790, guid: e2181b83f3d4e6943a5e0ce495e55117, type: 3}
       propertyPath: m_Name
       value: Gneiss
       objectReference: {fileID: 0}
     - target: {fileID: 7006070672993589303, guid: e2181b83f3d4e6943a5e0ce495e55117, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.6406975
+      value: -2.23
       objectReference: {fileID: 0}
     - target: {fileID: 7006070672993589303, guid: e2181b83f3d4e6943a5e0ce495e55117, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.3609426
+      value: -2.21
       objectReference: {fileID: 0}
     - target: {fileID: 7006070672993589303, guid: e2181b83f3d4e6943a5e0ce495e55117, type: 3}
       propertyPath: m_LocalPosition.z

@@ -40,6 +40,7 @@ public class PlayerController : MonoBehaviour
    // movement and jump speed and death lol VVV
    public float moveSpeed;
    public float jumpSpeed;
+   public float moveBoost;
    public bool isDead;
    public bool key;
   
@@ -49,6 +50,9 @@ public class PlayerController : MonoBehaviour
    public LayerMask groundLayer;
    public LayerMask OneWayLayer;
    public Vector2 groundBoxSize = new Vector2(0.8f, 0.2f);
+   
+   
+   
 
    void Awake()
    {
@@ -110,7 +114,7 @@ public class PlayerController : MonoBehaviour
        if (landing) return;
        // plays the correct animation every frame
        UpdateAnimation();
-      
+       
        if (isDead)
        {
            _rigidbody2D.constraints = RigidbodyConstraints2D.FreezePosition;
@@ -154,9 +158,29 @@ public class PlayerController : MonoBehaviour
       
        //checks if the player is currently landing, making the player unable to move
        if (landing) return;
-      
+
+       if (moveBoost != 0)
+       { 
+           if (_input.Horizontal == 0)
+           {
+               _rigidbody2D.linearVelocityX = moveBoost;
+           }
+           else if (_input.Horizontal == Mathf.Sign(moveBoost))
+           {
+               _rigidbody2D.linearVelocityX = (_input.Horizontal * moveSpeed)*2;
+           } 
+           else
+           {
+               _rigidbody2D.linearVelocityX = (_input.Horizontal * moveSpeed)/2;
+           }
+       }
+       else
+       {
+           _rigidbody2D.linearVelocityX = (_input.Horizontal * moveSpeed);
+       }
+     
        // movement code
-       _rigidbody2D.linearVelocityX = _input.Horizontal * moveSpeed;
+     
    }   
    
    // is Called Last of all updates
@@ -174,6 +198,7 @@ public class PlayerController : MonoBehaviour
            _animator.Play("Death Explosion");
            return;
        }
+       if (isDashing) return;
        if (isGrounded)
        {
            if (VelocityY <= -16f)
@@ -234,7 +259,7 @@ public class PlayerController : MonoBehaviour
            yield break;
        }
        if (_input.Horizontal != 0 && _input.Vertical == 0)
-       {//Horizontal
+       {//Horizontal 
            if (canDash > 0)
            {
                canDash--;
@@ -242,10 +267,11 @@ public class PlayerController : MonoBehaviour
                _rigidbody2D.gravityScale = 1f;
                _rigidbody2D.linearVelocity = new Vector2(_input.Horizontal * dashingPower * 1.6f, _input.Vertical * dashingPower);
                _trailRenderer.emitting = true;
+               _animator.Play("Dash LEFT");
            }
        }
-       if (_input.Horizontal != 0 && _input.Vertical != 0)
-       {//Diagonal
+       if (_input.Horizontal != 0 && _input.Vertical < 0)
+       {//Diagonal Up
            if (canDash > 0)
            {
                canDash --;
@@ -253,10 +279,23 @@ public class PlayerController : MonoBehaviour
                _rigidbody2D.gravityScale = 1.2f;
                _rigidbody2D.linearVelocity = new Vector2(_input.Horizontal * dashingPower * 1.3f, _input.Vertical * dashingPower * 1.3f);
                _trailRenderer.emitting = true;
+               _animator.Play("Dash UP LEFT");
            }
        }
-       if (_input.Horizontal == 0 && _input.Vertical != 0)
-       {//Vertical
+       if (_input.Horizontal != 0 && _input.Vertical > 0)
+       {//Diagonal Down
+           if (canDash > 0)
+           {
+               canDash --;
+               isDashing = true;
+               _rigidbody2D.gravityScale = 1.2f;
+               _rigidbody2D.linearVelocity = new Vector2(_input.Horizontal * dashingPower * 1.3f, _input.Vertical * dashingPower * 1.3f);
+               _trailRenderer.emitting = true;
+               _animator.Play("Dash DOWN LEFT");
+           }
+       }
+       if (_input.Horizontal == 0 && _input.Vertical > 0)
+       {//Up
            if (canDash > 0)
            {
                canDash --;
@@ -264,6 +303,19 @@ public class PlayerController : MonoBehaviour
                _rigidbody2D.gravityScale = 5f;
                _rigidbody2D.linearVelocity = new Vector2(_input.Horizontal * dashingPower, _input.Vertical * dashingPower * 1.8f);
                _trailRenderer.emitting = true;
+               _animator.Play("Dash UP");
+           }
+       }
+       if (_input.Horizontal == 0 && _input.Vertical < 0)
+       {//Down
+           if (canDash > 0)
+           {
+               canDash --;
+               isDashing = true;
+               _rigidbody2D.gravityScale = 5f;
+               _rigidbody2D.linearVelocity = new Vector2(_input.Horizontal * dashingPower, _input.Vertical * dashingPower * 1.8f);
+               _trailRenderer.emitting = true;
+               _animator.Play("Dash DOWN");
            }
        }
        yield return new WaitForSeconds(dashingTime);
@@ -315,11 +367,30 @@ public class PlayerController : MonoBehaviour
        if (other.transform.CompareTag("Door"))
        {
            if (key)
-           { 
+           {
                _DoorAnimator.Play("Door Open");
            }
        }
+       // Conveyor Belt Code VVV
+       //if (other.transform.CompareTag("Conveyor Belt Left"))
+       {
+           moveBoost = 0;
+       }
+       //if (other.transform.CompareTag("Conveyor Belt Right"))
+       {
+           moveBoost = 0;
+       }
    }
+
+   private void OnCollisionExit2D(Collision2D other)
+   {
+       //if (other.transform.CompareTag("Conveyor Belt Left") 
+           //|| other.transform.CompareTag("Conveyor Belt Right"))
+       {
+           moveBoost = 0;
+       }
+   }
+
    // functions for the fan air to push the player up
    private void OnTriggerEnter2D(Collider2D other)
    {
@@ -346,5 +417,4 @@ public class PlayerController : MonoBehaviour
            _rigidbody2D.gravityScale = 2f;
        }
    }
-  
 }
