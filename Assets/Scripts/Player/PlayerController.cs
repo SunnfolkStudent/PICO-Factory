@@ -63,7 +63,6 @@ public class PlayerController : MonoBehaviour
        //SceneManager.LoadScene(PlayerPrefs.GetString("Saved Scene"));
    }
    
-   
    void Start()
    {
        // Adds necessary components to code

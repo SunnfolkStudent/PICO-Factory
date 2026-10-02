@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
@@ -6,11 +7,23 @@ public class MenuController : MonoBehaviour
 {
     public GameObject Poster;
     public SpriteRenderer control_Poster;
-
+    public GameObject _player;
     private void Awake()
     {
+        _player = GameObject.FindGameObjectWithTag("Player");
         control_Poster  = Poster.GetComponent<SpriteRenderer>();
         control_Poster.enabled = false;
+        if (SceneManager.GetActiveScene().name == "Level 1")
+        {
+            _player.SetActive(false);
+            StartCoroutine(OpeningCutscene());
+        }
+    }
+
+    private IEnumerator OpeningCutscene()
+    {
+        yield return new WaitForSeconds(10.433f);
+        _player.SetActive(true);
     }
     // What am I even doing here? VVV 
     public void StartGame()
