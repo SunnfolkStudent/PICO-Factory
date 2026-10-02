@@ -14,6 +14,8 @@ public class PlayerController : MonoBehaviour
    public AudioClip[] jumpSounds;
    public AudioClip[] dashSounds;
    public AudioClip[] moveSounds;
+   public AudioClip pickup;
+   public AudioClip doorOpen;
    private AudioSource _audioSource;
 
 
@@ -52,9 +54,6 @@ public class PlayerController : MonoBehaviour
    public LayerMask OneWayLayer;
    public Vector2 groundBoxSize = new Vector2(0.8f, 0.2f);
 
-   
-   
-   
    
 
    void Awake()
@@ -382,6 +381,7 @@ public class PlayerController : MonoBehaviour
            if (key)
            {
                _DoorAnimator.Play("Door Open");
+               _audioSource.PlayOneShot(doorOpen);
            }
        }
        // Conveyor Belt Code VVV
@@ -461,6 +461,7 @@ public class PlayerController : MonoBehaviour
        {
            Destroy(other.gameObject);
            key = true;
+           _audioSource.PlayOneShot(pickup);
        }
 
        if (other.transform.CompareTag("Checkpoint"))
