@@ -8,6 +8,9 @@ public class EnemyPatrol : MonoBehaviour
     private bool squished;
     public float squishTime;
     public float moveSpeed;
+
+    public AudioClip[] moveSounds;
+    private AudioSource _audioSource;
     
     public LayerMask whatIsWall;
     public Transform wallCheck;
@@ -22,6 +25,7 @@ public class EnemyPatrol : MonoBehaviour
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
         _spriterenderer = GetComponent<SpriteRenderer>();
+        _audioSource = GetComponent<AudioSource>();
     }
     // Update is called once per frame
     void Update()
@@ -41,6 +45,18 @@ public class EnemyPatrol : MonoBehaviour
             _rigidbody2D.linearVelocity = Vector2.zero;
         }
         UpdateAnimation();
+    }
+    
+    public void WalkSound()
+    {
+        PlayRandomAudio(moveSounds);
+    }
+
+    private void PlayRandomAudio(AudioClip[] randomSounds)
+    {
+        var i = Random.Range(0, randomSounds.Length);
+        _audioSource.pitch = Random.Range(0.9f, 1.3f);
+        _audioSource.PlayOneShot(randomSounds[i]);
     }
 
     private void FixedUpdate()
