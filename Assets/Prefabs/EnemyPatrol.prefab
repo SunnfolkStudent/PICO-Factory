@@ -205,6 +205,8 @@ MonoBehaviour:
   moveSpeed: -1
   moveSounds:
   - {fileID: 8300000, guid: 702061c8afc64254fb834330fcf9beec, type: 3}
+  squishSounds:
+  - {fileID: 8300000, guid: 195040243a38c764ea34bd88327a5a2b, type: 3}
   whatIsWall:
     serializedVersion: 2
     m_Bits: 8
@@ -292,7 +294,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.504
   m_Pitch: 1
   Loop: 0
   Mute: 0

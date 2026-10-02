@@ -10,6 +10,7 @@ public class EnemyPatrol : MonoBehaviour
     public float moveSpeed;
 
     public AudioClip[] moveSounds;
+    public AudioClip[] squishSounds;
     private AudioSource _audioSource;
     
     public LayerMask whatIsWall;
@@ -50,6 +51,11 @@ public class EnemyPatrol : MonoBehaviour
     public void WalkSound()
     {
         PlayRandomAudio(moveSounds);
+    }
+
+    public void SquishSound()
+    {
+        PlayRandomAudio(squishSounds);
     }
 
     private void PlayRandomAudio(AudioClip[] randomSounds)
