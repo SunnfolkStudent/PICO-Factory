@@ -11,6 +11,11 @@ public class OvenEnemy : MonoBehaviour
     public float attackWindUp;
     public float explosionTime;
     public float moveSpeed;
+
+    public AudioClip[] firePillar;
+    public AudioClip[] footsteps;
+    public AudioClip[] explosion; 
+    private AudioSource _audioSource;
     
     public LayerMask whatIsWall;
     public Transform wallCheck;
@@ -29,6 +34,7 @@ public class OvenEnemy : MonoBehaviour
         _spriterenderer = GetComponent<SpriteRenderer>();
         flameTowerHitBox = transform.GetChild(0).gameObject.GetComponent<BoxCollider2D>();
         flameExplosionHitBox = transform.GetChild(1).gameObject.GetComponent<BoxCollider2D>();
+        _audioSource = GetComponent<AudioSource>();
     }
 
     private void Start()
@@ -95,14 +101,29 @@ public class OvenEnemy : MonoBehaviour
     private IEnumerator AttackTime()
     {
         attacking = true;
+        PlayRandomAudio(firePillar);
         yield return new WaitForSeconds(attackWindUp);
         flameTowerHitBox.enabled = true;
         flameExplosionHitBox.enabled = true;
+        PlayRandomAudio(explosion);
         yield return new WaitForSeconds(explosionTime);
         flameExplosionHitBox.enabled = false;
         flameTowerHitBox.enabled = false;
         attacking = false;
     }
+
+    public void FireSounds()
+    {
+        PlayRandomAudio(firePillar);
+    }
+    
+    private void PlayRandomAudio(AudioClip[] randomSounds)
+    {
+        var i = Random.Range(0, randomSounds.Length);
+        _audioSource.pitch = Random.Range(0.9f, 1.3f);
+        _audioSource.PlayOneShot(randomSounds[i]);
+    }
+
     private void UpdateAnimation()
     {
         if (turning)
