@@ -4,6 +4,14 @@ using UnityEngine.SceneManagement;
 
 public class MenuController : MonoBehaviour
 {
+    public GameObject Poster;
+    public SpriteRenderer control_Poster;
+
+    private void Awake()
+    {
+        control_Poster  = Poster.GetComponent<SpriteRenderer>();
+        control_Poster.enabled = false;
+    }
     // What am I even doing here? VVV 
     public void StartGame()
     {
@@ -17,7 +25,15 @@ public class MenuController : MonoBehaviour
 
     public void Controls()
     {
-        SceneManager.LoadScene("Controls");
+        if (!control_Poster.enabled)
+        {
+            control_Poster.enabled = true;
+        }
+
+        if (control_Poster.enabled)
+        {
+            control_Poster.enabled = false;
+        }
     }
 
     public void Quit()
