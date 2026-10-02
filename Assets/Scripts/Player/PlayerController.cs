@@ -449,7 +449,12 @@ public class PlayerController : MonoBehaviour
            {
                SceneManager.LoadScene("Level 10");
            }
+           if (SceneManager.GetActiveScene().name == "Level 10")
+           {
+            SceneManager.LoadScene("Finish");
+           }
        }
+       //UPDATE PLS
        
        if (other.transform.CompareTag("Fan Air"))
        {
