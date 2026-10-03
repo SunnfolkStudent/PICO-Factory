@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 6747867420453473882}
   m_Layer: 0
   m_Name: Crusher
-  m_TagString: Death
+  m_TagString: DeathCrusher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -205,7 +205,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: e09e44706e73f3748b5029d49bb8a07d, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 0
   m_Pitch: 1.2
   Loop: 0
   Mute: 0

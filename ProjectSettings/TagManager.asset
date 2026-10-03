@@ -15,6 +15,7 @@ TagManager:
   - Conveyor Belt Left
   - Finish0
   - DeathHeatCoil
+  - DeathCrusher
   layers:
   - Default
   - TransparentFX
