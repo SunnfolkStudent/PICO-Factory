@@ -21,7 +21,7 @@ public class LevelMusicController : MonoBehaviour
 
     private void Update()
     {
-        if (SceneManager.GetActiveScene().name == "Level 3")
+        if (SceneManager.GetActiveScene().name == "Finish")
             LevelMusicController.instance.GetComponent<AudioSource>().Pause();
         // Replace "Pause" with "Play" if you wish. 
     }

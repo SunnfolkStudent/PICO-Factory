@@ -214,6 +214,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 57dbfa02f22766945b16e8ddb429b263, type: 3}
   moveSounds:
   - {fileID: 8300000, guid: 42605187b5f9ade4693cc23d1e374680, type: 3}
+  pickup: {fileID: 8300000, guid: 37a400516afcda147a31b224c6a57a2f, type: 3}
+  doorOpen: {fileID: 8300000, guid: 3923fe5bde2a8cb4897b15a64e104159, type: 3}
   _trailRenderer: {fileID: 0}
   landing: 0
   VelocityY: 0
