@@ -358,7 +358,7 @@ public class PlayerController : MonoBehaviour
        {
            hitInfo.TryGetComponent(out EnemyPatrol enemy);
            enemy.Squish();
-          
+           canDash = 1;
            _rigidbody2D.linearVelocityY = jumpSpeed * 1.5f;
        }
    }
@@ -479,6 +479,11 @@ public class PlayerController : MonoBehaviour
            StartCoroutine(DeathAnimation());
            //PlayRandomAudio(deathSound); --- Doesn't Work!
            _audioSource.PlayOneShot(deathSound);
+       }
+
+       if (other.transform.CompareTag("DeathCrusher"))
+       {
+           isDead = true;
        }
    }
    private void OnTriggerExit2D(Collider2D other)

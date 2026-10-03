@@ -14,6 +14,7 @@ public class EnemyPatrol : MonoBehaviour
     private AudioSource _audioSource;
     
     public LayerMask whatIsWall;
+    public LayerMask whatIsEnemy;
     public Transform wallCheck;
     public Transform fallCheck;
 
@@ -75,7 +76,8 @@ public class EnemyPatrol : MonoBehaviour
     private bool DetectedWallOrFall()
     {
         return Physics2D.OverlapCircle(wallCheck.position, 0.1f, whatIsWall) 
-               || !Physics2D.OverlapCircle(fallCheck.position, 0.1f);
+               || !Physics2D.OverlapCircle(fallCheck.position, 0.1f) 
+               || Physics2D.OverlapCircle(wallCheck.position, 0.1f, whatIsEnemy);
     }
 
     private void OnDrawGizmos()
