@@ -1,7 +1,9 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.Assemblies;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
+using UnityEngine.InputSystem;
 
 public class MenuController : MonoBehaviour
 {
@@ -19,6 +21,7 @@ public class MenuController : MonoBehaviour
             StartCoroutine(OpeningCutscene());
         }
     }
+    
 
     private IEnumerator OpeningCutscene()
     {
@@ -70,6 +73,10 @@ public class MenuController : MonoBehaviour
         if (eventSystem.currentSelectedGameObject == null)
         {
             eventSystem.SetSelectedGameObject(arrow.gameObject);
+        }
+        if (Keyboard.current.escapeKey.wasPressedThisFrame)
+        {
+            SceneManager.LoadScene("Level 1");
         }
     }
 }

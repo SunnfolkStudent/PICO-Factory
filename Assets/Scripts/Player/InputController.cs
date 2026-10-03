@@ -12,12 +12,14 @@ public class InputController : MonoBehaviour
     public float Horizontal;
     public float Vertical;
     public bool Jump;
+    public bool ESC;
     
     public void Update()
     {
         Horizontal = _inputSystem.Player.Move.ReadValue<Vector2>().x;
         Vertical = _inputSystem.Player.Move.ReadValue<Vector2>().y;
         Jump = _inputSystem.Player.Jump.WasPressedThisFrame();
+        ESC = _inputSystem.Player.ESC.WasPressedThisFrame();
     }
 
 }

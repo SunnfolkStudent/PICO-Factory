@@ -92,7 +92,11 @@ public class PlayerController : MonoBehaviour
    }
    
    private void Update()
-   { //////// Dash Audio VVV 
+   { //////// Dash Audio VVV
+       if (_input.ESC)
+       {
+           SceneManager.LoadScene("Level 1");
+       }
        if (isDashing)
        {
            var i = Random.Range(0, dashSounds.Length);
