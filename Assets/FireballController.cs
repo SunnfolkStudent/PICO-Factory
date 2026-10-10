@@ -3,6 +3,7 @@ using UnityEngine;
 public class FireballController : MonoBehaviour
 {
     public float _moveSpeed = 3f;
+    public float _position = 9f;
     
     private Rigidbody2D _rigidbody2D;
 
@@ -16,7 +17,7 @@ public class FireballController : MonoBehaviour
     {
         if (other.transform.CompareTag("Death"))
         {
-            transform.position = new Vector3(transform.position.x, 9f);
+            transform.position = new Vector3(transform.position.x, _position);
         }
     }
 }

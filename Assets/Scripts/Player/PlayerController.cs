@@ -465,12 +465,14 @@ public class PlayerController : MonoBehaviour
            _rigidbody2D.gravityScale = -4f;
        }
        
+       
        if (other.transform.CompareTag("Key"))
        {
-           Destroy(other.gameObject);
+           //Destroy(other.gameObject);
            key = true;
-           _audioSource.PlayOneShot(pickup);
+           //_audioSource.PlayOneShot(pickup);
        }
+       
 
        if (other.transform.CompareTag("Checkpoint"))
        {

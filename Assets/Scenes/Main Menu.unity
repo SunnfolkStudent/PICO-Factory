@@ -135,7 +135,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &13622401
 SpriteRenderer:
   serializedVersion: 3
@@ -465,6 +465,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   Poster: {fileID: 13622400}
   control_Poster: {fileID: 13622401}
+  _player: {fileID: 0}
   eventSystem: {fileID: 431941918}
   arrow: {fileID: 920293029}
 --- !u!1 &310957154
@@ -1000,6 +1001,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MenuController
   Poster: {fileID: 13622400}
   control_Poster: {fileID: 13622401}
+  _player: {fileID: 0}
   eventSystem: {fileID: 431941918}
   arrow: {fileID: 920293029}
 --- !u!4 &1055762884
