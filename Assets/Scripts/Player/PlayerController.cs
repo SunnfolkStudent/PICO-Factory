@@ -97,6 +97,7 @@ public class PlayerController : MonoBehaviour
        if (_input.ESC)
        {
            SceneManager.LoadScene("Level 1");
+           // Maybe make music restart when pressing ESC? - DO LATER! 
        }
        if (isDashing)
        {

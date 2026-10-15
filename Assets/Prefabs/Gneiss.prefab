@@ -216,6 +216,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 42605187b5f9ade4693cc23d1e374680, type: 3}
   pickup: {fileID: 8300000, guid: 4481f99a536ae96479769e7bca74621e, type: 3}
   doorOpen: {fileID: 8300000, guid: bec9f4a896ff3d143b092b099a5ba71e, type: 3}
+  doorSoundLong: {fileID: 8300000, guid: 0edf01b8119308c4dbba0c977b0b6d55, type: 3}
   _trailRenderer: {fileID: 0}
   landing: 0
   VelocityY: 0
@@ -378,7 +379,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 0
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
