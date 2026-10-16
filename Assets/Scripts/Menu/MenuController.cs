@@ -76,7 +76,14 @@ public class MenuController : MonoBehaviour
         }
         if (Keyboard.current.leftCtrlKey.isPressed && Keyboard.current.digit1Key.isPressed)
         {
-            HCController.Hardcore = true;
+            if (!HCController.Hardcore)
+            {
+                HCController.Hardcore = true;
+            }
+            else
+            {
+                HCController.Hardcore = false;
+            }
         }
     }
 }

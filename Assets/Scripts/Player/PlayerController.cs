@@ -80,7 +80,22 @@ public class PlayerController : MonoBehaviour
    private IEnumerator AfterDeath()
    {
        yield return new WaitForSeconds(0.5f);
-       SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+       if (HCController.Hardcore)
+       {
+           HCController.Lives--;
+           if (HCController.Lives <= 0)
+           {
+               SceneManager.LoadScene("Game Over Screen");
+           }
+           else
+           {
+               SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+           }
+       }
+       else
+       {
+           SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+       }
    }
 
    private void GetCheckpoint()

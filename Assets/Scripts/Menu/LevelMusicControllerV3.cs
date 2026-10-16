@@ -21,6 +21,7 @@ public class LevelMusicControllerV3 : MonoBehaviour
 
     private void Update()
     {
+        if (HCController.Hardcore) return;
         if (SceneManager.GetActiveScene().name == "Finish")
             LevelMusicControllerV3.instance.GetComponent<AudioSource>().Pause();
         if (SceneManager.GetActiveScene().name == "Level 1")
