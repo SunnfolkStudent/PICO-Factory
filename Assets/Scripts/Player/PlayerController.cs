@@ -47,6 +47,7 @@ public class PlayerController : MonoBehaviour
    public float moveBoost;
    public bool isDead;
    public bool key;
+   public bool _doorUnlocked;
   
    // used for jumping and ground checks vv
    public bool isGrounded;
@@ -383,8 +384,10 @@ public class PlayerController : MonoBehaviour
        // open door if the player has the key of the level
        if (other.transform.CompareTag("Door"))
        {
+           if (_doorUnlocked) return; 
            if (key)
            {
+               _doorUnlocked  = true;
                _DoorAnimator.Play("Door Open");
                _audioSource.PlayOneShot(doorOpen);
                _audioSource.PlayOneShot(doorSoundLong);
