@@ -5,6 +5,7 @@ public class HCController : MonoBehaviour
 {
     public static bool Hardcore;
     public static int Lives;
+    private bool gainedLives;
     public GameObject ui;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -13,16 +14,21 @@ public class HCController : MonoBehaviour
         Hardcore = false;
         DontDestroyOnLoad(gameObject);
     }
-    
-    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+
+    private void Update()
     {
-        if (scene.name == "Level 1")
+        if (SceneManager.GetActiveScene().name == "Level 1")
         {
-            Lives = 3;
+            if (!gainedLives)
+            {
+                gainedLives = true;
+                Lives = 3;
+            }
             if (Hardcore)
             {
-                ui = GameObject.FindGameObjectWithTag("UI");
+                
             }
         }
     }
+
 }

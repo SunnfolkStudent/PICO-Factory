@@ -1,0 +1,415 @@
+fileFormatVersion: 2
+guid: baf5536e83df68946ba7d5082cfc0bb6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1750633995446615103
+    second: GameOverSmoke_0
+  - first:
+      213: 3797557026796696988
+    second: GameOverSmoke_1
+  - first:
+      213: -823784673397955243
+    second: GameOverSmoke_2
+  - first:
+      213: -5406416234088468152
+    second: GameOverSmoke_3
+  - first:
+      213: 2616697573062641374
+    second: GameOverSmoke_4
+  - first:
+      213: 897721577071903371
+    second: GameOverSmoke_5
+  - first:
+      213: -5263979768096899389
+    second: GameOverSmoke_6
+  - first:
+      213: 3013689180551827472
+    second: GameOverSmoke_7
+  - first:
+      213: 4352662448823965956
+    second: GameOverSmoke_8
+  - first:
+      213: -5191949194326258542
+    second: GameOverSmoke_9
+  - first:
+      213: -5680752065958782668
+    second: GameOverSmoke_10
+  - first:
+      213: 6564345519722434278
+    second: GameOverSmoke_11
+  - first:
+      213: 1392431750313143149
+    second: GameOverSmoke_12
+  - first:
+      213: 4142483909219530560
+    second: GameOverSmoke_13
+  - first:
+      213: 7590112929494978645
+    second: GameOverSmoke_14
+  - first:
+      213: 7481218176327476742
+    second: GameOverSmoke_15
+  - first:
+      213: -2773192119644381622
+    second: GameOverSmoke_16
+  - first:
+      213: 4875817825924469425
+    second: GameOverSmoke_17
+  - first:
+      213: -6129024167691227767
+    second: GameOverSmoke_18
+  - first:
+      213: 3899599562820345178
+    second: GameOverSmoke_19
+  - first:
+      213: 6481177786992645902
+    second: GameOverSmoke_20
+  - first:
+      213: -7799598594385404067
+    second: GameOverSmoke_21
+  - first:
+      213: -3619601264666092983
+    second: GameOverSmoke_22
+  - first:
+      213: 750076332695404784
+    second: GameOverSmoke_23
+  - first:
+      213: 3901668961320343265
+    second: GameOverSmoke_24
+  - first:
+      213: -7001445979585498669
+    second: GameOverSmoke_25
+  - first:
+      213: 256249498702404122
+    second: GameOverSmoke_26
+  - first:
+      213: 419756597129570238
+    second: GameOverSmoke_27
+  - first:
+      213: 3951737499148911718
+    second: GameOverSmoke_28
+  - first:
+      213: -3766103964184283544
+    second: GameOverSmoke_29
+  - first:
+      213: -4790210253915658303
+    second: GameOverSmoke_30
+  - first:
+      213: 7265002899429474742
+    second: GameOverSmoke_31
+  - first:
+      213: 7433666976338487258
+    second: GameOverSmoke_32
+  - first:
+      213: -1757214248934794604
+    second: GameOverSmoke_33
+  - first:
+      213: -449320535164315549
+    second: GameOverSmoke_34
+  - first:
+      213: 6287567834436837634
+    second: GameOverSmoke_35
+  - first:
+      213: -9149289360816094167
+    second: GameOverSmoke_36
+  - first:
+      213: -2727040441310511907
+    second: GameOverSmoke_37
+  - first:
+      213: 7509556994258908578
+    second: GameOverSmoke_38
+  - first:
+      213: 486735475906896349
+    second: GameOverSmoke_39
+  - first:
+      213: -6366395240207634234
+    second: GameOverSmoke_40
+  - first:
+      213: -8779537686934658974
+    second: GameOverSmoke_41
+  - first:
+      213: 4837744650123888306
+    second: GameOverSmoke_42
+  - first:
+      213: 5962751276969879874
+    second: GameOverSmoke_43
+  - first:
+      213: 5326677857112587050
+    second: GameOverSmoke_44
+  - first:
+      213: 8967129527075029489
+    second: GameOverSmoke_45
+  - first:
+      213: 7876167377717149069
+    second: GameOverSmoke_46
+  - first:
+      213: 783115208441733917
+    second: GameOverSmoke_47
+  - first:
+      213: 6071284596928384121
+    second: GameOverSmoke_48
+  - first:
+      213: -7650389486615720533
+    second: GameOverSmoke_49
+  - first:
+      213: -4840769507235413215
+    second: GameOverSmoke_50
+  - first:
+      213: 981609807764059104
+    second: GameOverSmoke_51
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GameOverSmoke_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c38ea908af74b7e0800000000000000
+      internalID: -1750633995446615103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameOverSmoke_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c95718cdef1a3b430800000000000000
+      internalID: 3797557026796696988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameOverSmoke_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55524b244345194f0800000000000000
+      internalID: -823784673397955243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameOverSmoke_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 841704b541d88f4b0800000000000000
+      internalID: -5406416234088468152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameOverSmoke_4
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed6860f2490605420800000000000000
+      internalID: 2616697573062641374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameOverSmoke_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b82039c9409557c00800000000000000
+      internalID: 897721577071903371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: bee2104f3a91e7443bb719c4c1a4012d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":6.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      GameOverSmoke_0: -1750633995446615103
+      GameOverSmoke_1: 3797557026796696988
+      GameOverSmoke_2: -823784673397955243
+      GameOverSmoke_3: -5406416234088468152
+      GameOverSmoke_4: 2616697573062641374
+      GameOverSmoke_5: 897721577071903371
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

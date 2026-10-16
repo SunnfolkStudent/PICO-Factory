@@ -63,7 +63,6 @@ public class MenuController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        print(eventSystem.currentSelectedGameObject.name);
         
         if (eventSystem.currentSelectedGameObject.transform.position.y != arrow.position.y)
         {
@@ -74,16 +73,12 @@ public class MenuController : MonoBehaviour
         {
             eventSystem.SetSelectedGameObject(arrow.gameObject);
         }
-        if (Keyboard.current.leftCtrlKey.isPressed && Keyboard.current.digit1Key.isPressed)
+        if (Keyboard.current.leftAltKey.IsPressed() && Keyboard.current.dKey.wasPressedThisFrame)
         {
-            if (!HCController.Hardcore)
-            {
-                HCController.Hardcore = true;
-            }
-            else
-            {
-                HCController.Hardcore = false;
-            }
+            
+            HCController.Hardcore = true;
+            print("Hardcore: On");
+                
         }
     }
 }

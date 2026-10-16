@@ -10,25 +10,42 @@ public class PlayerHealthController : MonoBehaviour
 
     public void Awake()
     {
-        heartEmpty = find
+        
     }
 
     private void Update()
     {
         if (SceneManager.GetActiveScene().name == "Main Menu")
         {
+            hearts[0].enabled = false;
             hearts[1].enabled = false;
             hearts[2].enabled = false;
-        }
-        for (int i = 0; i < hearts.Length; i++)
-        {
-            if (i < HCController.Lives)
+            if (HCController.Hardcore)
             {
-                hearts[i].sprite = find:
+                hearts[0].enabled = true;
+            }
+        }
+        else
+        {
+            if (HCController.Hardcore)
+            {
+                for (int i = 0; i < hearts.Length; i++)
+                {
+                    if (i < HCController.Lives)
+                    {
+                        hearts[i].enabled = true;
+                    }
+                    else
+                    {
+                        hearts[i].enabled = false;
+                    }
+                }
             }
             else
             {
-                
+                hearts[0].enabled = false;
+                hearts[1].enabled = false;
+                hearts[2].enabled = false;
             }
         }
     }
