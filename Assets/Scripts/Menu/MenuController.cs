@@ -74,9 +74,9 @@ public class MenuController : MonoBehaviour
         {
             eventSystem.SetSelectedGameObject(arrow.gameObject);
         }
-        if (Keyboard.current.escapeKey.wasPressedThisFrame)
+        if (Keyboard.current.leftCtrlKey.isPressed && Keyboard.current.digit1Key.isPressed)
         {
-            SceneManager.LoadScene("Level 1");
+            HCController.Hardcore = true;
         }
     }
 }
