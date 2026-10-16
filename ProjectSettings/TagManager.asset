@@ -17,6 +17,7 @@ TagManager:
   - DeathHeatCoil
   - DeathCrusher
   - Camera Script Trigger
+  - DeathGranite
   layers:
   - Default
   - TransparentFX

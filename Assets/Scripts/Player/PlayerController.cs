@@ -494,6 +494,11 @@ public class PlayerController : MonoBehaviour
        {
            isDead = true;
        }
+
+       if (other.transform.CompareTag("DeathGranite"))
+       {
+           isDead = true;
+       }
    }
    private void OnTriggerExit2D(Collider2D other)
    {
