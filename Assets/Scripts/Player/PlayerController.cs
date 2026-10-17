@@ -174,7 +174,7 @@ public class PlayerController : MonoBehaviour
    private void PlayRandomAudio(AudioClip[] randomSounds)
    {
        var i = Random.Range(0, randomSounds.Length);
-       _audioSource.pitch = Random.Range(0.8f, 1.3f);
+       _audioSource.pitch = Random.Range(0.8f, 1.1f);
        _audioSource.PlayOneShot(randomSounds[i]);
    }
    
