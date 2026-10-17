@@ -24,10 +24,10 @@ public class HCController : MonoBehaviour
                 gainedLives = true;
                 Lives = 3;
             }
-            if (Hardcore)
-            {
-                
-            }
+        }
+        if (SceneManager.GetActiveScene().name == "Game Over Screen")
+        {
+            Destroy(gameObject);
         }
     }
 

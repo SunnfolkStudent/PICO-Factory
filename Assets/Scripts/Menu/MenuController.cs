@@ -85,14 +85,9 @@ public class MenuController : MonoBehaviour
             SceneManager.LoadScene("Level 1");
         }
 
-        if (Keyboard.current.leftAltKey.isPressed && Keyboard.current.dKey.wasPressedThisFrame)
+        if (Keyboard.current.hKey.isPressed && Keyboard.current.cKey.wasPressedThisFrame)
         {
-            HCController.Hardcore = true;
-            if (HCController.Hardcore == false)
-            {
-                HCController.Hardcore = true;
-            }
-            else
+            if (!HCController.Hardcore)
             {
                 HCController.Hardcore = true;
             }

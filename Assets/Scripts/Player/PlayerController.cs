@@ -83,7 +83,10 @@ public class PlayerController : MonoBehaviour
        if (HCController.Hardcore)
        {
            HCController.Lives--;
-           if (HCController.Lives <= 0) { SceneManager.LoadScene("Game Over Screen"); }
+           if (HCController.Lives <= 0)
+           {
+               SceneManager.LoadScene("Game Over Screen");
+           }
            else { SceneManager.LoadScene(SceneManager.GetActiveScene().name); }
        }
        else
