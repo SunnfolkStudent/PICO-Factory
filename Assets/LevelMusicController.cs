@@ -21,6 +21,7 @@ public class LevelMusicController : MonoBehaviour
 
     private void Update()
     {
+        if (HCController.Hardcore) Destroy(gameObject);
         if (HCController.Hardcore) return;
         if (SceneManager.GetActiveScene().name == "Level 6")
             LevelMusicController.instance.GetComponent<AudioSource>().Pause();
