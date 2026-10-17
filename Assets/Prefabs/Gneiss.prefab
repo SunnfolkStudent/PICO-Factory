@@ -207,11 +207,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6dba583d251ff5a48bc58b1098e3bdf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  deathSound: {fileID: 8300000, guid: 62ac75a8ed2a1b045ac87e337d44c83c, type: 3}
+  deathSound: {fileID: 8300000, guid: 65befc48bbb2fb84483532f9ff03b02b, type: 3}
   jumpSounds:
-  - {fileID: 8300000, guid: 195040243a38c764ea34bd88327a5a2b, type: 3}
+  - {fileID: 8300000, guid: 0294988beaa736f479fc8cb32b12ee48, type: 3}
   dashSounds:
-  - {fileID: 8300000, guid: 57dbfa02f22766945b16e8ddb429b263, type: 3}
+  - {fileID: 8300000, guid: 786cf02a8bee2b04a82973417d242a70, type: 3}
   moveSounds:
   - {fileID: 8300000, guid: 42605187b5f9ade4693cc23d1e374680, type: 3}
   pickup: {fileID: 8300000, guid: 4481f99a536ae96479769e7bca74621e, type: 3}
@@ -383,7 +383,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 42605187b5f9ade4693cc23d1e374680, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.8
   m_Pitch: 1
   Loop: 0
   Mute: 0

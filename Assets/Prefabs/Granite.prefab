@@ -369,11 +369,11 @@ MonoBehaviour:
   explosionTime: 0.4
   moveSpeed: -0.5
   firePillar:
-  - {fileID: 8300000, guid: 78bac4ac709aede42895c86a929625be, type: 3}
+  - {fileID: 8300000, guid: 48d220e9df4ef2844a8b4a7b0d64b6cf, type: 3}
   footsteps:
-  - {fileID: 8300000, guid: cd7d6ee873af83446aaa9cfeef04a1f0, type: 3}
+  - {fileID: 8300000, guid: 6265a4bbfe790ed42b862e799529881b, type: 3}
   explosion:
-  - {fileID: 8300000, guid: 62ac75a8ed2a1b045ac87e337d44c83c, type: 3}
+  - {fileID: 8300000, guid: 65befc48bbb2fb84483532f9ff03b02b, type: 3}
   whatIsWall:
     serializedVersion: 2
     m_Bits: 8
@@ -392,7 +392,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.8
   m_Pitch: 0.72
   Loop: 0
   Mute: 0

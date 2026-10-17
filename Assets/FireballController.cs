@@ -3,7 +3,7 @@ using UnityEngine;
 public class FireballController : MonoBehaviour
 {
     public float _moveSpeed = 3f;
-    public float _position = 9f;
+    public float _position;
     
     private Rigidbody2D _rigidbody2D;
 

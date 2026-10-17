@@ -3,12 +3,16 @@ using UnityEngine;
 public class FireballV2 : MonoBehaviour
 {
     public float _moveSpeed = 2f;
+
+    public AudioClip fireClear; 
+    private AudioSource _audioSource;
     
     private Rigidbody2D _rigidbody2D;
 
     void Start()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
+        _audioSource = GetComponent<AudioSource>();
         _rigidbody2D.linearVelocityY = -_moveSpeed; 
     }
     

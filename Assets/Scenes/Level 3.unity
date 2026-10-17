@@ -280,7 +280,7 @@ TilemapCollider2D:
     m_Bits: 4294967295
   m_IsTrigger: 0
   m_UsedByEffector: 1
-  m_CompositeOperation: 0
+  m_CompositeOperation: 1
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
@@ -4207,9 +4207,9 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: a33a410d1fdfbcd4692a996e665b5d7a, type: 3}
+  m_Resource: {fileID: 8300000, guid: 3eeabfc1202e5c5429202264d4b56983, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 0.76
   Loop: 1
   Mute: 0
@@ -5103,7 +5103,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4352218711751093688, guid: b6c03b70071a2d442bbe261b8be84168, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.75
+      value: 7.1
       objectReference: {fileID: 0}
     - target: {fileID: 4352218711751093688, guid: b6c03b70071a2d442bbe261b8be84168, type: 3}
       propertyPath: m_LocalPosition.z

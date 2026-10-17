@@ -119,24 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &44212658 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5887363952326641885, guid: 2cc2fdf263e1f8b41b76ebc81eaec8db, type: 3}
-  m_PrefabInstance: {fileID: 864642521}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &44212665
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 44212658}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d0b7890ad18bae408f7a75ae4e8741a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::FireballV2
-  _moveSpeed: 2
 --- !u!1 &116200450
 GameObject:
   m_ObjectHideFlags: 0
@@ -577,6 +559,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fireball (Ver) (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 7340017592632960635, guid: 2cc2fdf263e1f8b41b76ebc81eaec8db, type: 3}
+      propertyPath: m_Volume
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -603,6 +589,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireballV2
   _moveSpeed: 2
+  fireClear: {fileID: 0}
 --- !u!1001 &864642521
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -611,14 +598,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2914581069368365390, guid: 2cc2fdf263e1f8b41b76ebc81eaec8db, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2914581069368365390, guid: 2cc2fdf263e1f8b41b76ebc81eaec8db, type: 3}
-      propertyPath: _moveSpeed
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3628214403215490835, guid: 2cc2fdf263e1f8b41b76ebc81eaec8db, type: 3}
       propertyPath: m_LocalPosition.x
       value: -9.5
@@ -663,13 +642,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fireball (Ver) (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 7340017592632960635, guid: 2cc2fdf263e1f8b41b76ebc81eaec8db, type: 3}
+      propertyPath: m_Volume
+      value: 0.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5887363952326641885, guid: 2cc2fdf263e1f8b41b76ebc81eaec8db, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 44212665}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2cc2fdf263e1f8b41b76ebc81eaec8db, type: 3}
 --- !u!1001 &881736830
 PrefabInstance:
@@ -1069,6 +1049,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireballV2
   _moveSpeed: 2
+  fireClear: {fileID: 0}
 --- !u!1001 &1248568796
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1189,6 +1170,10 @@ PrefabInstance:
     - target: {fileID: 4208139670459690791, guid: 726f71056dac07b4ca0082c3bfcfc616, type: 3}
       propertyPath: m_Name
       value: Crusher (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8418195280969443118, guid: 726f71056dac07b4ca0082c3bfcfc616, type: 3}
+      propertyPath: m_Volume
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5604,6 +5589,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fireball (Ver) (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 7340017592632960635, guid: 2cc2fdf263e1f8b41b76ebc81eaec8db, type: 3}
+      propertyPath: m_Volume
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5672,6 +5661,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fireball (Ver) (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 7340017592632960635, guid: 2cc2fdf263e1f8b41b76ebc81eaec8db, type: 3}
+      propertyPath: m_Volume
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5698,6 +5691,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireballV2
   _moveSpeed: 2
+  fireClear: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

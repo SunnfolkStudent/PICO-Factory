@@ -2017,9 +2017,9 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: a33a410d1fdfbcd4692a996e665b5d7a, type: 3}
+  m_Resource: {fileID: 8300000, guid: 3eeabfc1202e5c5429202264d4b56983, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.8
   m_Pitch: 0.76
   Loop: 1
   Mute: 0
@@ -4014,8 +4014,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 1
+  m_Offset: {x: 0, y: 0.064660825}
+  m_Radius: 0.7305802
 --- !u!212 &1557773289
 SpriteRenderer:
   serializedVersion: 3
@@ -4085,8 +4085,8 @@ Transform:
   m_GameObject: {fileID: 1557773285}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6, y: 5.7, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -5, y: 5.7214, z: 0}
+  m_LocalScale: {x: 1, y: 1.0214, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
