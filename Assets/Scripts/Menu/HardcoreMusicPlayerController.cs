@@ -31,5 +31,8 @@ public class HardcoreMusicPlayerController : MonoBehaviour
         {
             HardcoreMusicPlayerController.instance.GetComponent<AudioSource>().Pause();
         }
+        
+        if (SceneManager.GetActiveScene().name == "Game Over Screen")
+            HardcoreMusicPlayerController.instance.GetComponent<AudioSource>().Pause();
     }
 }
